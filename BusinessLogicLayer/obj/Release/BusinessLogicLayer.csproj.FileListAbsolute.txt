@@ -1,0 +1,96 @@
+C:\Users\Abhishek Agarwal\Desktop\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Users\Abhishek Agarwal\Desktop\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Abhishek Agarwal\Desktop\AgraYuvaShakti\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+C:\Users\Abhishek Agarwal\Desktop\AgraYuvaShakti\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+C:\Users\Abhishek Agarwal\Desktop\AgraYuvaShakti\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+C:\Users\Abhishek Agarwal\Desktop\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CopyComplete
+C:\Users\Abhishek Agarwal\Desktop\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+C:\Users\Abhishek Agarwal\Desktop\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\AgraYuvaShakti\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_Projects\AgraYuvaShakti\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\AgraYuvaShakti\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojAssemblyReference.cache
+D:\Tweak_Projects\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_Projects\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CopyComplete
+D:\Tweak_Projects\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\AgraYuvaShakti\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\RishabGems\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_Projects\RishabGems\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\RishabGems\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\RishabGems\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojAssemblyReference.cache
+D:\Tweak_Projects\RishabGems\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_Projects\RishabGems\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CopyComplete
+D:\Tweak_Projects\RishabGems\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\RishabGems\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\SRSFurnishers\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_Projects\SRSFurnishers\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\SRSFurnishers\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\SRSFurnishers\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojAssemblyReference.cache
+D:\Tweak_Projects\SRSFurnishers\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_Projects\SRSFurnishers\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CopyComplete
+D:\Tweak_Projects\SRSFurnishers\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\SRSFurnishers\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\RngSafaBilling\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_Projects\RngSafaBilling\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\RngSafaBilling\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\RngSafaBilling\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojAssemblyReference.cache
+D:\Tweak_Projects\RngSafaBilling\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_Projects\RngSafaBilling\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CopyComplete
+D:\Tweak_Projects\RngSafaBilling\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\RngSafaBilling\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\HeyWritersDashboard\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_Projects\HeyWritersDashboard\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\HeyWritersDashboard\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\HeyWritersDashboard\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojAssemblyReference.cache
+D:\Tweak_Projects\HeyWritersDashboard\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_Projects\HeyWritersDashboard\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CopyComplete
+D:\Tweak_Projects\HeyWritersDashboard\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\HeyWritersDashboard\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\KhatuShyamCreations\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_Projects\KhatuShyamCreations\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\KhatuShyamCreations\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\KhatuShyamCreations\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojAssemblyReference.cache
+D:\Tweak_Projects\KhatuShyamCreations\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_Projects\KhatuShyamCreations\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CopyComplete
+D:\Tweak_Projects\KhatuShyamCreations\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\KhatuShyamCreations\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\Skbuilder\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_Projects\Skbuilder\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\Skbuilder\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_Projects\Skbuilder\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojAssemblyReference.cache
+D:\Tweak_Projects\Skbuilder\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_Projects\Skbuilder\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CopyComplete
+D:\Tweak_Projects\Skbuilder\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_Projects\Skbuilder\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Eden\Skbuilder\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Eden\Skbuilder\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Eden\Skbuilder\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Eden\Skbuilder\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Eden\Skbuilder\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Eden\Skbuilder\BusinessLogicLayer\obj\Release\Business.450209FB.Up2Date
+D:\Eden\Skbuilder\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Eden\Skbuilder\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_Github\EdenGarden1\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_Github\EdenGarden1\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_Github\EdenGarden1\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_Github\EdenGarden1\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Tweak_Github\EdenGarden1\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_Github\EdenGarden1\BusinessLogicLayer\obj\Release\Business.450209FB.Up2Date
+D:\Tweak_Github\EdenGarden1\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_Github\EdenGarden1\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_GituHub\EdenGarden1\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_GituHub\EdenGarden1\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_GituHub\EdenGarden1\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_GituHub\EdenGarden1\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Tweak_GituHub\EdenGarden1\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_GituHub\EdenGarden1\BusinessLogicLayer\obj\Release\Business.450209FB.Up2Date
+D:\Tweak_GituHub\EdenGarden1\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_GituHub\EdenGarden1\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb
+D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll.config
+D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\obj\Release\Business.450209FB.Up2Date
+D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb

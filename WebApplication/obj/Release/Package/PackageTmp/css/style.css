@@ -1,0 +1,94 @@
+:root{
+    --mainColor1st : #29ccdd;
+    --mainColor2nd : #6642fc;
+}
+body{
+    background-color: #ddd;
+}
+.btn-primary{
+    background-color: var(--mainColor1st) !important;
+    border: var(--mainColor1st) !important;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 2px;
+    white-space: normal;
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: .3s,.3s,.3s,2s;
+    transition-timing-function: ease-in-out;
+    padding: .8rem 2rem;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    font-family: "Gill Sans", sans-serif;
+}
+.btn-secondary{
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 2px;
+    white-space: normal;
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: .3s,.3s,.3s,2s;
+    transition-timing-function: ease-in-out;
+    padding: .8rem 2rem;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    font-family: "Gill Sans", sans-serif;
+}
+.btn-primary:hover {
+    color: #ffffff !important;
+    background-color: var(--mainColor2nd) !important;
+    border-color: var(--mainColor2nd) !important;
+}
+#img-box img{
+    width: 45px !important;
+}
+.login-box{
+    background-color: #fff;
+    padding: 30px 50px;
+    margin: 15% 0;
+}
+.register-form-container .container,
+.applicant-details-container .container,
+.receipt-details-container .container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px #777;
+    margin-bottom: 30px;
+}
+.register-form-container .nav-pills .nav-link.active{
+    background-color: var(--mainColor1st) !important;
+    color: #fff !important;
+}
+.register-form-container .nav-pills .nav-link{
+    color: #777 !important;
+}
+.register-form-container label{
+    text-transform: uppercase;
+}
+.register-form-container input{
+    text-transform: uppercase;
+}
+.applicant-details-container .nav-pills .nav-link{
+    color: #fff !important;
+}
+.applicant-details-container .nav-pills .nav-link.active{
+    background-color: transparent !important;
+    border-bottom: 2px solid red;
+}
+.receipt-details-container p{
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+#front-logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid red;
+}

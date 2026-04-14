@@ -24,9 +24,6 @@ namespace WebApplication
         public string mobileno;
         protected void Page_Load(object sender, EventArgs e)
         {
-            WebsiteSession.OrderNumber = "T17567117988";
-            WebsiteSession.Payable = 500;
-
             //Master Page
             if (!IsPostBack)
             {

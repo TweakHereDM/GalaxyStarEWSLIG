@@ -76,6 +76,7 @@
                                     <asp:ListItem Text="IndusInd Bank" Value="IndusInd Bank" />
                                     <asp:ListItem Text="Kotak Mahindra Bank Ltd" Value="Kotak Mahindra Bank Ltd" />
                                     <asp:ListItem Text="Karur Vysya Bank" Value="Karur Vysya Bank" />
+                                    <asp:ListItem Text="Malviya Urban Co-Operative Bank Ltd" Value="Malviya Urban Co-Operative Bank Ltd" />
                                     <asp:ListItem Text="ORIENTAL BANK OF COMMERCE" Value="ORIENTAL BANK OF COMMERCE" />
                                     <asp:ListItem Text="PUNJAB NATIONAL BANK" Value="PUNJAB NATIONAL BANK" />
                                     <asp:ListItem Text="RBL BANK" Value="RBL BANK" />

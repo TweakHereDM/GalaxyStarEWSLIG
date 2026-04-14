@@ -8,7 +8,7 @@
     </asp:ScriptManager>
     <section class="section">
 
-        <h2 style="text-align: center; color: white">Lottery Panel</h2>
+        <h2 style="text-align: center; color: white">Lottery Panel Star City</h2>
         <div class="row">
             <div class="col-12">
                 <h3>

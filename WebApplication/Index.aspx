@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-    <title>Urban Village</title>
+    <title>Galaxy Realmart Pvt Ltd</title>
 
     <meta name="description" content="Galaxy Real Mart Pvt Ltd, scheme for LIG and EWS" />
     <meta name="author" content="okler.net">
@@ -40,7 +40,6 @@
 
 
     <style>
-
         .header-body {
             background: white !important;
             background-color: white !important;
@@ -123,7 +122,7 @@
                                 <div class="header-row">
                                     <div class="header-logo">
                                         <a href="index.aspx">
-                                            <img src="Images/Eden-Garden-logo.png" style="width:180px; height:auto;">
+                                            <img src="Images/Eden-Garden-logo.png" style="width: 180px; height: auto;">
                                         </a>
                                     </div>
                                 </div>
@@ -171,12 +170,6 @@
                                                     <li>
                                                         <a href="javascript:void(0)" class=" font-weight-bold text-5 py-2">Booking is closed now, please do not deposit any amount.</a>
                                                     </li>--%>
-
-
-
-
-
-
                                                 </ul>
 
                                             </nav>
@@ -198,7 +191,7 @@
                 <section class="section overlay overlay-show overlay-op-8 border-0 m-0 p-0" style="background-image: url(Images/Home-BG-Image.jpg); background-size: cover; background-position: center; height: 100vh;">
                     <div class="container container-xl-custom pt-5 h-100">
                         <div class="row align-items-center pt-5 h-100">
-                            <div class="col" style="padding-top:200px;">
+                            <div class="col" style="padding-top: 200px;">
                                 <%-- <h1 class="word-rotator letters type type-clean-light text-color-light font-weight-extra-bold text-12 line-height-2 mb-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
                                     <span>We are the best</span><br>
                                     <span class="word-rotator-words waiting">
@@ -210,11 +203,11 @@
                                 </h1>--%>
 
                                 <%--<p style="color:white; font-size:20px;">
-                                    Welcome to The Urban Village
+                                    Welcome to The Galaxy Realmart Pvt Ltd
                                 </p>--%>
-                                <h1 style="color:white;">
-                                    Welcome to The Urban Village
-                                    <p style="color:white; font-size:20px;"> <%--class="text-4-5 text-color-light font-weight-light opacity-9 mb-4" data-plugin-animated-letters data-plugin-options="{'startDelay': 1500, 'minWindowWidth': 0, 'animationSpeed': 50}"--%>
+                                <h1 style="color: white;">Welcome to The Galaxy Realmart Pvt Ltd
+                                    <p style="color: white; font-size: 20px;">
+                                        <%--class="text-4-5 text-color-light font-weight-light opacity-9 mb-4" data-plugin-animated-letters data-plugin-options="{'startDelay': 1500, 'minWindowWidth': 0, 'animationSpeed': 50}"--%>
                                         Modern Day Luxuries In Harmony With Nature
                                     </p>
                                 </h1>
@@ -229,11 +222,32 @@
                     <div class="container container-xl-custom">
                         <div class="row align-items-center">
                             <div class="col-md-6 col-lg-5 col-xl-6 text-center pe-5 mb-5 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
-                                <img src="Images/Home-Top-Image.jpg" class="img-fluid" alt="" />
+                                <h3>Category Wise Plot</h3>
+
+                                <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="false" Font-Size="11pt"
+                                    DataKeyNames="CategoryName" AllowPaging="true" CssClass="grid"
+                                    Width="100%" PageSize="50" CellPadding="10">
+                                    <Columns>
+                                        <asp:BoundField DataField="CategoryName" HeaderText="Category" />
+                                        <asp:BoundField DataField="EWSCount" HeaderText="EWS" />
+
+                                        <asp:BoundField DataField="LIGCount" HeaderText="LIG" />
+                                    </Columns>
+                                    <EmptyDataTemplate>
+                                        No Records Found...
+                                    </EmptyDataTemplate>
+                                    <AlternatingRowStyle BackColor="#f9f9f9" />
+                                    <RowStyle BackColor="#DACDCD" />
+
+                                    <RowStyle ForeColor="Black" />
+                                    <HeaderStyle BackColor="Black" />
+                                    <HeaderStyle ForeColor="White" />
+                                    <PagerStyle CssClass="GridPager" />
+                                </asp:GridView>
                             </div>
                             <div class="col-md-6 col-lg-7 col-xl-6 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
                                 <span class="font-weight-bold text-color-dark opacity-8 text-4">Easy & Transparent Registration Charges</span>
-                                <h2 class="font-weight-bold text-5 mb-4">At Galaxy Enclave, we believe in clarity and affordability. Our one-time registration fees are minimal to ensure accessibility for all:</h2>
+                                <h2 class="font-weight-bold text-5 mb-4">At Galaxy Star City, we believe in clarity and affordability. Our one-time registration fees are minimal to ensure accessibility for all:</h2>
                                 <ul class="list list-icons pb-2 mb-4">
                                     <li><i class="fas fa-caret-right top-6"></i><span class="text-4">LIG (Low-Income Group): ₹1000</span></li>
                                     <li><i class="fas fa-caret-right top-6"></i><span class="text-4">EWS (Economically Weaker Section): ₹500</span></li>
@@ -250,9 +264,9 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-9 text-center">
                             <h2 class="font-weight-bold text-11 appear-animation" data-appear-animation="fadeInUpShorter">A WORD ABOUT US</h2>
-                            <p class="line-height-9 text-4 opacity-9 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">The Urban Village is the flagship project of Galaxy Group. Spread across 100 acres, it is perhaps the biggest gated township of Rajasthan. Much more than just a township, it is the realization of our vision to bring the calm environs of the village close to the city. With luxurious farmhouses, villas and wide open spaces, this may just be the place you are looking to get away to.</p>
+                            <p class="line-height-9 text-4 opacity-9 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">The Galaxy Realmart Pvt Ltd is the flagship project of Galaxy Group. Spread across 100 acres, it is perhaps the biggest gated township of Rajasthan. Much more than just a township, it is the realization of our vision to bring the calm environs of the village close to the city. With luxurious farmhouses, villas and wide open spaces, this may just be the place you are looking to get away to.</p>
                             <p class="line-height-9 text-4 opacity-9 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">We are proud to present the comforts of the city life nestled in extensive green expanse. We have already planted more than 10,000 trees/plants and this is just the beginning. It is a stone’s throw away from the city centre yet in a cocoon of its own.</p>
-                            <p class="line-height-9 text-4 opacity-9 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">There are endless comforts and pleasures to be explored and enjoyed in and around The Urban Village. Relax, unwind and celebrate with friends and family in style.</p>
+                            <p class="line-height-9 text-4 opacity-9 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">There are endless comforts and pleasures to be explored and enjoyed in and around The Galaxy Realmart Pvt Ltd. Relax, unwind and celebrate with friends and family in style.</p>
                         </div>
                         <%-- <div class="col-xl-9 text-center py-5">
                             <h2 class="font-weight-bold text-11 appear-animation" data-appear-animation="fadeInUpShorter">Category Wise Alloted Plot List</h2>
@@ -266,12 +280,12 @@
                         <div class="col-md-12 text-center">
                             <h1 class="appear-animation" data-appear-animation="fadeInUpShorter">पेपर प्रकाशन</h1>
                             <div class="col-md-12">
-                                <div class="col-md-12">
-                                    <img src="/assets/img/PressRelease.png" class="img-fluid" alt="" style="width: 50%; max-width: 600px; height: auto; display: block; margin: 0 auto;" />
+                                <div class="col-md-6">
+                                    <img src="/assets/img/PressRelease.png" class="img-fluid" alt="" style="max-width: 600px; height: auto; display: block; margin: 0 auto;" />
                                 </div>
-                                <%--<div class="col-md-6">
-                                    <img src="/assets/img/news2.jpeg" class="img-fluid" alt="" />
-                                </div>--%>
+                                <div class="col-md-6">
+                                    <img src="/assets/img/RevisedPaper.jpeg" class="img-fluid" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -330,7 +344,7 @@
                                 <li class="text-4 mb-2"><i class="fas fa-angle-right"></i><a href="Terms-and-Conditions.aspx" class="link-hover-style-1 ms-1">Terms and Conditions</a></li>
                                 <li class="text-4 mb-2"><i class="fas fa-angle-right"></i><a href="Privacy-Policy.aspx" class="link-hover-style-1 ms-1">Privacy Policy</a></li>
                                 <li class="text-4 mb-2"><i class="fas fa-angle-right"></i><a href="javascript:void(0)" class="link-hover-style-1 ms-1">Print Praman Patra</a></li>
-                                <li class="text-4 mb-2"><i class="fas fa-angle-right"></i><a href="Documents/EWS_Book_Galaxy_Enclave.pdf" target="_blank" class="link-hover-style-1 ms-1">Scheme Booklet <i class="fas fa-file-pdf ms-1" style="color:#ffffff;"></i></a></li>
+                                <li class="text-4 mb-2"><i class="fas fa-angle-right"></i><a href="Documents/EWS_Book_Galaxy_Enclave.pdf" target="_blank" class="link-hover-style-1 ms-1">Scheme Booklet <i class="fas fa-file-pdf ms-1" style="color: #ffffff;"></i></a></li>
                             </ul>
                         </div>
                         <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start pt-3">
@@ -348,7 +362,8 @@
                             <div class="row py-4">
                                 <div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
                                     <p>
-                                        © Copyright 2025. All Rights Reserved.  <!--Developed By | <a href="https://www.tweakhere.com/" target="_blank">TweakHere Technocrat Pvt Ltd</a>-->
+                                        © Copyright 2025. All Rights Reserved. 
+                                        <!--Developed By | <a href="https://www.tweakhere.com/" target="_blank">TweakHere Technocrat Pvt Ltd</a>-->
                                     </p>
                                 </div>
                             </div>

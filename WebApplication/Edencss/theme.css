@@ -3703,7 +3703,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav-main.header-nav-main-mobile-dark nav > ul > li > a {
-		color: #dedede;
+		color: #dedede!important;
 	}
 
 	#header .header-nav-main.header-nav-main-mobile-dark nav > ul > li > a.active {

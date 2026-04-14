@@ -112,3 +112,11 @@ D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.c
 D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\obj\Debug\Business.450209FB.Up2Date
 D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
 D:\Tweak_GituHub\GalaxyEnclave\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+D:\Tweak_GituHub\GalaxyStarEWSLIG\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
+D:\Tweak_GituHub\GalaxyStarEWSLIG\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+D:\Tweak_GituHub\GalaxyStarEWSLIG\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+D:\Tweak_GituHub\GalaxyStarEWSLIG\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Tweak_GituHub\GalaxyStarEWSLIG\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Tweak_GituHub\GalaxyStarEWSLIG\BusinessLogicLayer\obj\Debug\Business.450209FB.Up2Date
+D:\Tweak_GituHub\GalaxyStarEWSLIG\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+D:\Tweak_GituHub\GalaxyStarEWSLIG\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

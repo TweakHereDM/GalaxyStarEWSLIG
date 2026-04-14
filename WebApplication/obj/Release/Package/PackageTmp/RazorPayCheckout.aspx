@@ -161,12 +161,12 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                     <% if (BusinessLogicLayer.WebsiteSession.Payable == 500)
                                     { %>
-                                    <img src="/images/1000.jpeg" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; width:20%" />
+                                    <img src="/images/1000.jpeg" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" />
                                     <% }   %>
 
                                     <% if (BusinessLogicLayer.WebsiteSession.Payable == 1000)
                                     { %>
-                                    <img src="/images/1000.jpeg" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; width:20%" />
+                                    <img src="/images/1000.jpeg" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" />
                                     <% }   %>
                                     <%-- <form action="/Success.aspx?refRazor=<%=BusinessLogicLayer.WebsiteSession.OrderNumber%>" method="post" class="PayNow">
 

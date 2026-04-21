@@ -886,6 +886,7 @@
     <Content Include="Images\PhonePayAmbrish.jpeg" />
     <Content Include="FormList.aspx" />
     <Content Include="AllotmentList.aspx" />
+    <Content Include="PrintForm.aspx" />
     <Content Include="ReceiptList.aspx" />
     <Content Include="Apply.aspx" />
     <Content Include="apply.html" />
@@ -2131,6 +2132,13 @@
     </Compile>
     <Compile Include="AllotmentList.aspx.designer.cs">
       <DependentUpon>AllotmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.aspx.cs">
+      <DependentUpon>PrintForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintForm.aspx.designer.cs">
+      <DependentUpon>PrintForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="ReceiptList.aspx.cs">
       <DependentUpon>ReceiptList.aspx</DependentUpon>

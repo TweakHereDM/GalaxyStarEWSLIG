@@ -523,7 +523,7 @@ namespace BusinessLogicLayer
             }
         }
 
-        public List<Prc_FormlistResult> Formlist(int ID, string SearchBy, string Category, string ApplyFor, int RegNo, int Alloty, out int CountRecord)
+        public List<Prc_FormlistResult> Formlist(int ID, string SearchBy, string Category, string ApplyFor, int RegNo, int Alloty, int FormStatus, out int CountRecord)
         {
             using (WebsiteDataContext ObjContext = new WebsiteDataContext())
             {
@@ -531,7 +531,7 @@ namespace BusinessLogicLayer
                 Category = Category == "" ? null : Category;
                 ApplyFor = ApplyFor == "" ? null : ApplyFor;
 
-                List<Prc_FormlistResult> dList = ObjContext.Prc_Formlist(ID, SearchBy, Category, ApplyFor, RegNo, Alloty).ToList();
+                List<Prc_FormlistResult> dList = ObjContext.Prc_Formlist(ID, SearchBy, Category, ApplyFor, RegNo, Alloty, FormStatus).ToList();
                 CountRecord = dList.Count();
                 return dList;
             }
@@ -678,7 +678,7 @@ namespace BusinessLogicLayer
                 ApplyFor = ApplyFor == "" ? null : ApplyFor;
 
 
-                List<Prc_FormlistResult> dList = ObjContext.Prc_Formlist(ID, SearchBy, Category, ApplyFor, RegNo, Alloty).Take(takeout).OrderBy(s => s.CustomerName.Trim()).ToList();
+                List<Prc_FormlistResult> dList = ObjContext.Prc_Formlist(ID, SearchBy, Category, ApplyFor, RegNo, Alloty, 1).Take(takeout).OrderBy(s => s.CustomerName.Trim()).ToList();
                 CountRecord = dList.Count();
 
                 return dList;

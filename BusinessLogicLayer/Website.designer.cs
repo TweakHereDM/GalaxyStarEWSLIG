@@ -1013,9 +1013,9 @@ namespace BusinessLogicLayer
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Prc_Formlist")]
-		public ISingleResult<Prc_FormlistResult> Prc_Formlist([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="Int")] System.Nullable<int> iD, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SearchBy", DbType="VarChar(100)")] string searchBy, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Category", DbType="VarChar(200)")] string category, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ApplyFor", DbType="VarChar(100)")] string applyFor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RegNo", DbType="Int")] System.Nullable<int> regNo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Alloty", DbType="Int")] System.Nullable<int> alloty)
+		public ISingleResult<Prc_FormlistResult> Prc_Formlist([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="Int")] System.Nullable<int> iD, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SearchBy", DbType="VarChar(100)")] string searchBy, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Category", DbType="VarChar(200)")] string category, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ApplyFor", DbType="VarChar(100)")] string applyFor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RegNo", DbType="Int")] System.Nullable<int> regNo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Alloty", DbType="Int")] System.Nullable<int> alloty, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="FormStatus", DbType="Int")] System.Nullable<int> formStatus)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD, searchBy, category, applyFor, regNo, alloty);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD, searchBy, category, applyFor, regNo, alloty, formStatus);
 			return ((ISingleResult<Prc_FormlistResult>)(result.ReturnValue));
 		}
 	}

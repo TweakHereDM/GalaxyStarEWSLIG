@@ -61,6 +61,7 @@
                                     <asp:ListItem Text="BANK OF MAHARASHTRA" Value="BANK OF MAHARASHTRA" />
                                     <asp:ListItem Text="Bandhan Bank Ltd." Value="Bandhan Bank Ltd." />
                                     <asp:ListItem Text="Bank of Rajsthan" Value="Bank of Rajsthan" />
+                                    <asp:ListItem Text="CITY UNION BANK LTD" Value="CITY UNION BANK LTD" />
                                     <asp:ListItem Text="Central Bank of India" Value="Central Bank of India" />
                                     <asp:ListItem Text="CORPORATION BANK" Value="CORPORATION BANK" />
                                     <asp:ListItem Text="Dena Bank" Value="Dena Bank" />
@@ -79,6 +80,7 @@
                                     <asp:ListItem Text="Malviya Urban Co-Operative Bank Ltd" Value="Malviya Urban Co-Operative Bank Ltd" />
                                     <asp:ListItem Text="ORIENTAL BANK OF COMMERCE" Value="ORIENTAL BANK OF COMMERCE" />
                                     <asp:ListItem Text="PUNJAB NATIONAL BANK" Value="PUNJAB NATIONAL BANK" />
+									<asp:ListItem Text="PUNJAB & SIND BANK" Value="PUNJAB & SIND BANK" />
                                     <asp:ListItem Text="RBL BANK" Value="RBL BANK" />
                                     <asp:ListItem Text="Standard Chartered Bank" Value="Standard Chartered Bank" />
                                     <asp:ListItem Text="STATE BANK OF BIKANER AND JAIPUR" Value="STATE BANK OF BIKANER AND JAIPUR" />

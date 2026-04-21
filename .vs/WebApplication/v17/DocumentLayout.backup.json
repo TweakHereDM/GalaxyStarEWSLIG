@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\receiptlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\receiptlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_gituhub\\galaxystarewslig\\webapplication\\printform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\printform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_gituhub\\galaxystarewslig\\webapplication\\printform.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\printform.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\apply.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\apply.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\lotteryreward.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\lotteryreward.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\formlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\formlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_gituhub\\galaxystarewslig\\webapplication\\admin\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_gituhub\\galaxystarewslig\\webapplication\\admin\\adddd.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\adddd.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\addpayment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\addpayment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89104D8A-8D70-434C-8679-3422AE34E6F9}|BusinessLogicLayer\\BusinessLogicLayer.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\businesslogiclayer\\commonbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,8 +35,28 @@
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\formlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\apply.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\apply.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_gituhub\\galaxystarewslig\\webapplication\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\lotteryreward.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\lotteryreward.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\adddd.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\adddd.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\addpayment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\addpayment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\apply.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -41,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\razorpaycheckout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\razorpaycheckout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\edencss\\theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -99,10 +119,6 @@
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\privacy-policy.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\receiptlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\receiptlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\transactionlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\transactionlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -117,14 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\adduser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\adduser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\lotteryreward.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\lotteryreward.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\lotteryreward.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\lotteryreward.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\trialprint.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,110 +150,63 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Index.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\Admin\\Index.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Index.aspx",
-              "RelativeToolTip": "WebApplication\\Admin\\Index.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-04-13T07:49:59.206Z",
+              "Title": "PrintForm.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\PrintForm.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\PrintForm.aspx.cs",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\PrintForm.aspx.cs",
+              "RelativeToolTip": "WebApplication\\PrintForm.aspx.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwDEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T09:19:43.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddPayment.aspx.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddPayment.aspx.cs",
-              "RelativeDocumentMoniker": "WebApplication\\Admin\\AddPayment.aspx.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddPayment.aspx.cs",
-              "RelativeToolTip": "WebApplication\\Admin\\AddPayment.aspx.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCcAAABwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T06:26:00.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dashboard.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\Admin\\Dashboard.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx",
-              "RelativeToolTip": "WebApplication\\Admin\\Dashboard.aspx",
+              "DocumentIndex": 1,
+              "Title": "PrintForm.aspx",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\PrintForm.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\PrintForm.aspx",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\PrintForm.aspx",
+              "RelativeToolTip": "WebApplication\\PrintForm.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-03-31T10:49:08.438Z",
+              "WhenOpened": "2026-04-17T09:19:38.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Dashboard.aspx.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx.cs",
-              "RelativeDocumentMoniker": "WebApplication\\Admin\\Dashboard.aspx.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx.cs",
-              "RelativeToolTip": "WebApplication\\Admin\\Dashboard.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T11:04:16.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.aspx.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx.cs",
-              "RelativeDocumentMoniker": "WebApplication\\Index.aspx.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx.cs",
-              "RelativeToolTip": "WebApplication\\Index.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T13:01:49.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RazorPayCheckout.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\RazorPayCheckout.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\RazorPayCheckout.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\RazorPayCheckout.aspx",
-              "RelativeToolTip": "WebApplication\\RazorPayCheckout.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-03-31T10:27:48.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Apply.aspx.cs",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Apply.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Apply.aspx.cs",
               "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Apply.aspx.cs",
               "RelativeToolTip": "WebApplication\\Apply.aspx.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAqwGwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T08:08:27.927Z"
+              "WhenOpened": "2026-04-02T08:08:27.927Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "FormList.aspx.cs",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\FormList.aspx.cs",
               "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx.cs",
               "RelativeToolTip": "WebApplication\\Admin\\FormList.aspx.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAArwCMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T08:08:14.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "AddDD.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddDD.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\AddDD.aspx",
@@ -258,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "AddDD.aspx.cs",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddDD.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\AddDD.aspx.cs",
@@ -270,7 +231,157 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.aspx",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\Index.aspx",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx",
+              "RelativeToolTip": "WebApplication\\Index.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-04-02T13:01:02.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LotteryReward.aspx",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\Admin\\LotteryReward.aspx",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx",
+              "RelativeToolTip": "WebApplication\\Admin\\LotteryReward.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-03-31T11:08:42.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LotteryReward.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\Admin\\LotteryReward.aspx.cs",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx.cs",
+              "RelativeToolTip": "WebApplication\\Admin\\LotteryReward.aspx.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAADgv5MAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T11:00:43.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReceiptList.aspx",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\ReceiptList.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\ReceiptList.aspx",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\ReceiptList.aspx",
+              "RelativeToolTip": "WebApplication\\ReceiptList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-03-28T08:22:24.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RazorPayCheckout.aspx",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\RazorPayCheckout.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\RazorPayCheckout.aspx",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\RazorPayCheckout.aspx",
+              "RelativeToolTip": "WebApplication\\RazorPayCheckout.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-03-31T10:27:48.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormList.aspx",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\Admin\\FormList.aspx",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx",
+              "RelativeToolTip": "WebApplication\\Admin\\FormList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-04-02T13:25:39.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CommonBLL.cs",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\CommonBLL.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\CommonBLL.cs",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\CommonBLL.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\CommonBLL.cs",
+              "ViewState": "AgIAAJkCAAAAAAAAAAAvwKgCAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T10:51:40.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\Index.aspx.cs",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx.cs",
+              "RelativeToolTip": "WebApplication\\Index.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T13:01:49.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Dashboard.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\Admin\\Dashboard.aspx.cs",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx.cs",
+              "RelativeToolTip": "WebApplication\\Admin\\Dashboard.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T11:04:16.208Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "Dashboard.aspx",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\Admin\\Dashboard.aspx",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx",
+              "RelativeToolTip": "WebApplication\\Admin\\Dashboard.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-03-31T10:49:08.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddPayment.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddPayment.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\Admin\\AddPayment.aspx.cs",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddPayment.aspx.cs",
+              "RelativeToolTip": "WebApplication\\Admin\\AddPayment.aspx.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCcAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T06:26:00.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.aspx",
+              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Index.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\Admin\\Index.aspx",
+              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Index.aspx",
+              "RelativeToolTip": "WebApplication\\Admin\\Index.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-04-13T07:49:59.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "theme.css",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Edencss\\theme.css",
               "RelativeDocumentMoniker": "WebApplication\\Edencss\\theme.css",
@@ -282,31 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormList.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\Admin\\FormList.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx",
-              "RelativeToolTip": "WebApplication\\Admin\\FormList.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-04-02T13:25:39.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CommonBLL.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\CommonBLL.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\CommonBLL.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\CommonBLL.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\CommonBLL.cs",
-              "ViewState": "AgIAAPYBAAAAAAAAAIA0wA0CAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T10:51:40.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Apply.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Apply.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Apply.aspx",
@@ -318,19 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\Index.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx",
-              "RelativeToolTip": "WebApplication\\Index.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-04-02T13:01:02.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "DDReceipt.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\DDReceipt.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\DDReceipt.aspx",
@@ -342,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "DDReturnPrint.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\DDReturnPrint.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\DDReturnPrint.aspx",
@@ -354,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "coreIsetting.config",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\coreIsetting.config",
               "RelativeDocumentMoniker": "WebApplication\\coreIsetting.config",
@@ -366,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "FormPrint.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormPrint.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\FormPrint.aspx",
@@ -378,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "AllotmentList.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\AllotmentList.aspx",
               "RelativeDocumentMoniker": "WebApplication\\AllotmentList.aspx",
@@ -390,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Website.Master",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Website.Master",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\Website.Master",
@@ -403,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "Success.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Success.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Success.aspx",
@@ -415,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "TransactionList.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TransactionList.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\TransactionList.aspx",
@@ -427,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "Privacy-Policy.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Privacy-Policy.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Privacy-Policy.aspx",
@@ -439,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "TransactionList.aspx.cs",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TransactionList.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\TransactionList.aspx.cs",
@@ -451,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "RegisterList.aspx.cs",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\RegisterList.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\RegisterList.aspx.cs",
@@ -463,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "RegisterList.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\RegisterList.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\RegisterList.aspx",
@@ -475,19 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ReceiptList.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\ReceiptList.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\ReceiptList.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\ReceiptList.aspx",
-              "RelativeToolTip": "WebApplication\\ReceiptList.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-03-28T08:22:24.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "AddUser.aspx",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddUser.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\AddUser.aspx",
@@ -499,19 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "LotteryReward.aspx.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx.cs",
-              "RelativeDocumentMoniker": "WebApplication\\Admin\\LotteryReward.aspx.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx.cs",
-              "RelativeToolTip": "WebApplication\\Admin\\LotteryReward.aspx.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAewIEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T11:00:43.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "FinalPrint.aspx.cs",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FinalPrint.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\FinalPrint.aspx.cs",
@@ -523,19 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "LotteryReward.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\Admin\\LotteryReward.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx",
-              "RelativeToolTip": "WebApplication\\Admin\\LotteryReward.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-03-31T11:08:42.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "TrialPrint.aspx.cs",
               "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TrialPrint.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\TrialPrint.aspx.cs",

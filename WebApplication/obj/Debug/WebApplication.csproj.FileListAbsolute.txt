@@ -468,6 +468,8 @@ D:\Tweak_GituHub\GalaxyEnclave\WebApplication\obj\Debug\WebApplication.csproj.Co
 D:\Tweak_GituHub\GalaxyEnclave\WebApplication\obj\Debug\WebAppli.11721D13.Up2Date
 D:\Tweak_GituHub\GalaxyEnclave\WebApplication\obj\Debug\WebApplication.dll
 D:\Tweak_GituHub\GalaxyEnclave\WebApplication\obj\Debug\WebApplication.pdb
+D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\obj\Debug\WebApplication.csproj.AssemblyReference.cache
+D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
 D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\bin\WebApplication.dll.config
 D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\bin\WebApplication.dll
 D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\bin\WebApplication.pdb
@@ -506,8 +508,6 @@ D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\bin\BusinessLogicLayer.pdb
 D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\bin\BusinessLogicLayer.dll.config
 D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\bin\Newtonsoft.Json.xml
 D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\obj\Debug\WebApplication.csproj.AssemblyReference.cache
-D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
 D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\obj\Debug\WebAppli.11721D13.Up2Date
 D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\obj\Debug\WebApplication.dll
 D:\Tweak_GituHub\GalaxyStarEWSLIG\WebApplication\obj\Debug\WebApplication.pdb

@@ -208,8 +208,12 @@
                                 <h1 style="color: white;">Welcome to The Galaxy Realmart Pvt Ltd
                                     <p style="color: white; font-size: 20px;">
                                         <%--class="text-4-5 text-color-light font-weight-light opacity-9 mb-4" data-plugin-animated-letters data-plugin-options="{'startDelay': 1500, 'minWindowWidth': 0, 'animationSpeed': 50}"--%>
-                                        Modern Day Luxuries In Harmony With Nature
+                                        Those who have submitted their forms, please submit your DD and other related documents at registered office address before 20 April 2026 5:00 PM
                                     </p>
+                                    <p style="color: white; font-size: 20px;">
+                                        जिन लोगों ने अपने फॉर्म जमा कर दिए हैं, कृपया अपने डिमांड ड्राफ्ट (DD) और अन्य संबंधित दस्तावेज़ 20 अप्रैल 2026 को शाम 5:00 बजे से पहले पंजीकृत कार्यालय के पते पर जमा करें।
+                                    </p>
+
                                 </h1>
                                 <a id="Apply1" runat="server" href="Apply.aspx" target="_blank" class="btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2200" data-appear-animation-duration="1.2s" data-plugin-options="{'minWindowWidth': 0}">APPLY<i class="fas fa-arrow-right ms-2"></i></a>
                             </div>

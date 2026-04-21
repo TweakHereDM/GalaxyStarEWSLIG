@@ -28,7 +28,7 @@ namespace WebApplication.Admin
         {
             int CountRecords = 0;
             string FormID = txtFormID.Text == "" ? "0" : txtFormID.Text;
-            GridView1.DataSource = objBLL.Formlist(0, txtSearch.Text, drpCategory.SelectedValue, DrpApplyFor.SelectedValue, Convert.ToInt32(FormID), 2, out CountRecords);
+            GridView1.DataSource = objBLL.Formlist(0, txtSearch.Text, drpCategory.SelectedValue, DrpApplyFor.SelectedValue, Convert.ToInt32(FormID), 2, Convert.ToInt32(drpFormStatus.SelectedValue), out CountRecords);
             GridView1.DataBind();
             ltrRecordCount.Text = CountRecords.ToString();
         }

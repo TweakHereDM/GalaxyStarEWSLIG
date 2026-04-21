@@ -168,6 +168,9 @@
                                             ItemStyle-Width="180px" HeaderText="Receipt">
                                             <ItemTemplate>
                                                 <a href='ReceiptDownload.aspx?ref=<%#Eval("FormID") %>'>Receipt</a>
+                                                <br />
+                                                <a href='FormPrint.aspx?ref=<%#Eval("FormID") %>'>Form</a>
+
                                             </ItemTemplate>
                                             <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
                                             <ItemStyle HorizontalAlign="Center" Width="180px"></ItemStyle>

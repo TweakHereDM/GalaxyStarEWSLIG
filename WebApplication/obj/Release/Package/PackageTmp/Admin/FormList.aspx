@@ -28,7 +28,6 @@
                         <div class="col-md-3">
                             Category
                             <asp:DropDownList ID="drpCategory" runat="server" CssClass="form-control">
-                              
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-2">
@@ -51,7 +50,16 @@
    <asp:TextBox ID="txtFormID" runat="server" CssClass="form-control" placeholder="Form ID"></asp:TextBox>
 
                         </div>
+                        <div class="col-md-2">
+                            Form Status
+    <asp:DropDownList ID="drpFormStatus" runat="server" CssClass="form-control">
+        <asp:ListItem Text="Select" Value="-1"></asp:ListItem>
 
+        <asp:ListItem Text="Approve" Value="1"></asp:ListItem>
+        <asp:ListItem Text="Reject" Value="2"></asp:ListItem>
+        <asp:ListItem Text="Pending" Value="0"></asp:ListItem>
+    </asp:DropDownList>
+                        </div>
                         <div class="col-md-2">
                             <br />
                             <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn-success btn"
@@ -62,7 +70,7 @@
 
                     <div class="card-header">
 
-                        <h4>Register List ( Total Record:
+                        <h4>Form List ( Total Record:
                 <asp:Literal ID="ltrRecordCount" runat="server"></asp:Literal>)</h4>
 
                     </div>

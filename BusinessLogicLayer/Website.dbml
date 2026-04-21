@@ -1703,6 +1703,7 @@
     <Parameter Name="ApplyFor" Parameter="applyFor" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="RegNo" Parameter="regNo" Type="System.Int32" DbType="Int" />
     <Parameter Name="Alloty" Parameter="alloty" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FormStatus" Parameter="formStatus" Type="System.Int32" DbType="Int" />
     <ElementType Name="Prc_FormlistResult">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="CustomerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />

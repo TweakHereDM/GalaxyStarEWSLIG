@@ -48,19 +48,22 @@
 
                     <div class="col-md-12" style="padding-top: 10px;">
                         <div class="col-md-3">
+                            <br />
                             <asp:DropDownList ID="drpCategory" runat="server" CssClass="form-control" OnSelectedIndexChanged="DrpApplyFor_SelectedIndexChanged" AutoPostBack="true">
                             </asp:DropDownList>
                         </div>
-                        <!--<div class="col-md-2">
+                        <div class="col-md-2">
+                            <br />
                             <asp:DropDownList ID="DrpApplyFor" runat="server" CssClass="form-control" OnSelectedIndexChanged="DrpApplyFor_SelectedIndexChanged" AutoPostBack="true">
 
                                 <asp:ListItem Text="EWS" Value="EWS"></asp:ListItem>
                                 <asp:ListItem Text="LIG" Value="LIG"></asp:ListItem>
                             </asp:DropDownList>
-                        </div> -->
+                        </div> 
                         <!--<asp:Literal ID="Literal1" runat="server"></asp:Literal>
                                     <asp:Literal ID="Literal2" runat="server"></asp:Literal> -->
-                        <div class="col-md-2">
+                        <div class="col-md-1">
+                            <br />
                             <asp:Button ID="btnSearch" runat="server" Text="Start Lottery" CssClass="btn-danger btn"
                                 OnClick="btnSearch_Click" />
 
@@ -147,11 +150,11 @@
                                 Category:
                                 <asp:Literal ID="ltrCategory" runat="server"></asp:Literal>
                             </div>
-                            <!--<div class="col-md-4">
+                            <div class="col-md-3">
                                 Apply For:
                                 <asp:Literal ID="ltrApplyFor" runat="server"></asp:Literal>
-                            </div> -->
-                            <div class="col-md-6">
+                            </div> 
+                            <div class="col-md-3">
                                 Allotment Count:
                                 <asp:Literal ID="ltrAllotmentCount" runat="server"></asp:Literal>
                             </div>

@@ -30,7 +30,7 @@ namespace WebApplication
         {
             int CountRecords = 0;
 
-            rpt_Menu.DataSource = objBLL.CategoryList(drpCategory.SelectedValue, "LIG", out CountRecords);
+            rpt_Menu.DataSource = objBLL.CategoryList(drpCategory.SelectedValue, "EWS", out CountRecords);
             rpt_Menu.DataBind();
 
         }
@@ -59,7 +59,23 @@ namespace WebApplication
                 var ltr = (Literal)e.Row.FindControl("ltrFormStatus");
                 var lbl = (Label)e.Row.FindControl("lblStatusText");
                 lbl.Text = status == 0 ? "Pending" : status == 1 ? "Approve" : status == 2 ? "Rejected" : "";
-                
+
+
+                if (lbl.Text == "Pending")
+                {
+                    lbl.CssClass = "btn btn-primary";
+                }
+                else if (lbl.Text == "Approve")
+                {
+                    lbl.CssClass = "btn btn-success";
+
+                }
+                else
+                {
+                    lbl.CssClass = "btn btn-danger";
+
+                }
+
             }
         }
 

@@ -1,21 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="galaxyenclave" Class="WebsiteDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=mssql.tweakhere.com,1533;Initial Catalog=galaxyenclave;Persist Security Info=True;User ID=tweakhere_insti" SettingsObjectName="BusinessLogicLayer.Properties.Settings" SettingsPropertyName="WebsiteConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.CallType" Member="CallTypes">
-    <Type Name="CallType">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.AdminCategory" Member="AdminCategories">
-    <Type Name="AdminCategory">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="CategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="AdminID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
   <Table Name="dbo.ABUser_login" Member="ABUser_logins">
     <Type Name="ABUser_login">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
@@ -29,29 +13,6 @@
       <Column Name="SessionID" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.TaskMaster" Member="TaskMasters">
-    <Type Name="TaskMaster">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="TaskDescription" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="IsUrgent" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="ReminderDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ReminderPeriod" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="StaffName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Labour" Member="Labours">
-    <Type Name="Labour">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="[Work]" Member="Work" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
   <Table Name="dbo.CategoryList" Member="CategoryLists">
     <Type Name="CategoryList">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
@@ -60,6 +21,47 @@
       <Column Name="AllotmentCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
+  <Function Name="dbo.ABPrc_AdminDashboard" Method="ABPrc_AdminDashboard">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ABPrc_AdminDashboardResult">
+      <Column Name="TotalApplication" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalAmount" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="PaidApplication" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ABPrc_CreateOrderNumber" Method="ABPrc_CreateOrderNumber">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ABPrc_CreateOrderNumberResult">
+      <Column Name="OrderNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ABproc_CheckuserLogin" Method="ABproc_CheckuserLogin">
+    <Parameter Name="UserName" Parameter="userName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="IPAddress" Parameter="iPAddress" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="ABproc_CheckuserLoginResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Settle" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Balance" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="BalanceAmount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="LoginResult" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_AddEditContactList" Method="Prc_AddEditContactList">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CustomerName" Parameter="customerName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SrNo" Parameter="srNo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Father" Parameter="father" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="RegNo" Parameter="regNo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Alloty" Parameter="alloty" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
   <Function Name="dbo.Prc_AddEditRegister" Method="Prc_AddEditRegister">
     <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
     <Parameter Name="ApplyFor" Parameter="applyFor" Type="System.String" DbType="VarChar(100)" />
@@ -128,1337 +130,30 @@
       <Column Name="PermissionStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
-  <Function Name="dbo.Prc_Create_OrderNumber" Method="Prc_Create_OrderNumber">
-    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
-    <ElementType Name="Prc_Create_OrderNumberResult">
-      <Column Name="OrderNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.Prc_Create_OrderSummary" Method="Prc_Create_OrderSummary">
-    <Parameter Name="CustomerID" Parameter="customerID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="RegID" Parameter="regID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="FormID" Parameter="formID" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Order_ID" Parameter="order_ID" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Total_Price" Parameter="total_Price" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Payment_Status" Parameter="payment_Status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="AmountReceived" Parameter="amountReceived" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="RefundAmount" Parameter="refundAmount" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="RefundDetail" Parameter="refundDetail" Type="System.String" DbType="VarChar(2000)" />
-    <Parameter Name="insertDate" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="PaymentDate" Parameter="paymentDate" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="RefundDate" Parameter="refundDate" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SessionID" Parameter="sessionID" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.Prc_DeleteContactList" Method="Prc_DeleteContactList">
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.Prc_UpdatePagePermission" Method="Prc_UpdatePagePermission">
-    <Parameter Name="PermissionID" Parameter="permissionID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IsActive" Parameter="isActive" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.Prc_UpdatePaymentStatus" Method="Prc_UpdatePaymentStatus">
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Txn_id" Parameter="txn_id" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Payer_Email" Parameter="payer_Email" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="CardType" Parameter="cardType" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="PaymentType" Parameter="paymentType" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="PaymentStatus" Parameter="paymentStatus" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="xBatch" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="xRefNum" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="xName" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="xMaskedCardNumber" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Employee" Parameter="employee" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Amount" Parameter="amount" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="CustomerName" Parameter="customerName" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Father" Parameter="father" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="FormNo" Parameter="formNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="RegId" Parameter="regId" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_AddEditVendor" Method="ABPrc_AddEditVendor">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="VarChar(2000)" />
-    <Parameter Name="Contact" Parameter="contact" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="alternateNo" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="GSTIN" Parameter="gSTIN" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="OverDueDays" Parameter="overDueDays" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_AddJobWorkPayment" Method="ABPrc_AddJobWorkPayment">
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Remark" Parameter="remark" Type="System.String" DbType="VarChar(5000)" />
-    <Parameter Name="EntryDate" Parameter="entryDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="AmountPaid" Parameter="amountPaid" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_AddPayment" Method="ABPrc_AddPayment">
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Remark" Parameter="remark" Type="System.String" DbType="VarChar(5000)" />
-    <Parameter Name="EntryDate" Parameter="entryDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="AmountReceived" Parameter="amountReceived" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_AddPurchasePayment" Method="ABPrc_AddPurchasePayment">
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Remark" Parameter="remark" Type="System.String" DbType="VarChar(5000)" />
-    <Parameter Name="EntryDate" Parameter="entryDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="AmountPaid" Parameter="amountPaid" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_AdminAddEdit" Method="ABPrc_AdminAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="UserName" Parameter="userName" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="IsAdmin" Parameter="isAdmin" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_AdminList" Method="ABPrc_AdminList">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_AdminListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="Settle" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="Balance" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="BalanceAmount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CartDetails" Method="ABPrc_CartDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_CartDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OrderID" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="CSGT" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="SGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="IGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Discount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="HSNCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="StyleNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="CustomerCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="QTYDescription" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="QTYCount" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CartList" Method="ABPrc_CartList">
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_CartListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OrderID" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="CSGT" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="SGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="IGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Discount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="HSNCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="StyleNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="CustomerCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="QTYDescription" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="QTYCount" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="UnitName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CheckChallanNoForLabour" Method="ABPrc_CheckChallanNoForLabour">
-    <Parameter Name="ChallanNo" Parameter="challanNo" Type="System.String" DbType="VarChar(20)" />
-    <ElementType Name="ABPrc_CheckChallanNoForLabourResult">
-      <Column Name="LabourCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CreateCart" Method="ABPrc_CreateCart">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="CustomerName" Parameter="customerName" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Mobile" Parameter="mobile" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="GSTIN" Parameter="gSTIN" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="State" Parameter="state" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="VarChar(2000)" />
-    <Parameter Name="ProductID" Parameter="productID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="GSTPer" Parameter="gSTPer" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="HSNCode" Parameter="hSNCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="QTY" Parameter="qTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Unit" Parameter="unit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="CustomerCode" Parameter="customerCode" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Rate" Parameter="rate" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="QTYDescription" Parameter="qTYDescription" Type="System.String" DbType="VarChar(2000)" />
-    <Parameter Name="Remark" Parameter="remark" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="OverDueDate" Parameter="overDueDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="SaleDate" Parameter="saleDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="QTYCount" Parameter="qTYCount" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Discount" Parameter="discount" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_CreateChallanNumber" Method="ABPrc_CreateChallanNumber">
-    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_CreateChallanNumberResult">
-      <Column Name="OrderNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CreateOrderNumber" Method="ABPrc_CreateOrderNumber">
-    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_CreateOrderNumberResult">
-      <Column Name="OrderNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CreatePONo" Method="ABPrc_CreatePONo">
-    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_CreatePONoResult">
-      <Column Name="PONo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CreateSONo" Method="ABPrc_CreateSONo">
-    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_CreateSONoResult">
-      <Column Name="SONo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CustomerAddEdit" Method="ABPrc_CustomerAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="CustomerName" Parameter="customerName" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="VarChar(2000)" />
-    <Parameter Name="Mobile" Parameter="mobile" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="GSTIN" Parameter="gSTIN" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="State" Parameter="state" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="AlternateNo" Parameter="alternateNo" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="OverDueDays" Parameter="overDueDays" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_CustomerDetails" Method="ABPrc_CustomerDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_CustomerDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="State" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="AlternateNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="OverDueDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CustomerDetailsByMobile" Method="ABPrc_CustomerDetailsByMobile">
-    <Parameter Name="Mobile" Parameter="mobile" Type="System.String" DbType="VarChar(20)" />
-    <ElementType Name="ABPrc_CustomerDetailsByMobileResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="State" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="AlternateNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="OverDueDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CustomerList" Method="ABPrc_CustomerList">
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_CustomerListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="State" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="AlternateNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="OverDueDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_CustomerRegAddEdit" Method="ABPrc_CustomerRegAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="FirmName" Parameter="firmName" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="GSTIN" Parameter="gSTIN" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="VarChar(2000)" />
-    <Parameter Name="Pincode" Parameter="pincode" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="DelPerson" Parameter="delPerson" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DelContact" Parameter="delContact" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="DelWhatsapp" Parameter="delWhatsapp" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="DelEmail" Parameter="delEmail" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="AcName" Parameter="acName" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="AcContact" Parameter="acContact" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="AcWhatsapp" Parameter="acWhatsapp" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="AcEmail" Parameter="acEmail" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="SalePerson" Parameter="salePerson" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SaleContact" Parameter="saleContact" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SaleWhatsapp" Parameter="saleWhatsapp" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SaleEmail" Parameter="saleEmail" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ContactNo" Parameter="contactNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="WhatsappNo" Parameter="whatsappNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="EmailID" Parameter="emailID" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_CustomerRegList" Method="ABPrc_CustomerRegList">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_CustomerRegListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="FirmName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Pincode" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="DelPerson" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="DelContact" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="DelWhatsapp" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="DelEmail" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="AcName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="AcContact" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="AcWhatsapp" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="AcEmail" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="SalePerson" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="SaleContact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="SaleWhatsapp" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="SaleEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="ContactNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="WhatsappNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="EmailID" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_DeleteJobAssign" Method="ABPrc_DeleteJobAssign">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_DemandList" Method="ABPrc_DemandList">
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_DemandListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Company" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="HSNCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="GSTPer" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Image" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="[Work]" Member="Work" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Prefix" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="MinQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_DueList" Method="ABPrc_DueList">
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="PaymentStatus" Parameter="paymentStatus" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_DueListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OrderID" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="CSGT" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="SGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="IGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Discount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="State" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="PaymentStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="AmountReceived" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_GSTStateList" Method="ABPrc_GSTStateList">
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
-    <ElementType Name="ABPrc_GSTStateListResult">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="StateName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="AlphaCode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="GSTStateCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_ItemListLotNoWise" Method="ABPrc_ItemListLotNoWise">
-    <Parameter Name="LotNo" Parameter="lotNo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ItemCode" Parameter="itemCode" Type="System.String" DbType="VarChar(100)" />
-    <ElementType Name="ABPrc_ItemListLotNoWiseResult">
-      <Column Name="LotID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="LotNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Working" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="GivenQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="PendingQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="ChallanNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ChallanNoTable" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_ItemReceiveList" Method="ABPrc_ItemReceiveList">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_ItemReceiveListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedProductName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ReceivedNewQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedNewUnit" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ChallanNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ItemTransferID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="WorkerChallanNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="ReceivedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="ITChallan" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="OldItem" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_ItemReceiveListDetails" Method="ABPrc_ItemReceiveListDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_ItemReceiveListDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedProductName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ReceivedNewQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedNewUnit" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ChallanNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ItemTransferID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="WorkerChallanNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="ReceivedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="RItemCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_ItemTransferAddEdit" Method="ABPrc_ItemTransferAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Labour" Parameter="labour" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Item" Parameter="item" Type="System.String" DbType="VarChar(2000)" />
-    <Parameter Name="Working" Parameter="working" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Cost" Parameter="cost" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="QTY" Parameter="qTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Unit" Parameter="unit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="QTYDescription" Parameter="qTYDescription" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Remark" Parameter="remark" Type="System.String" DbType="VarChar(5000)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="QTYCount" Parameter="qTYCount" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="ChallanNo" Parameter="challanNo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ItemCode" Parameter="itemCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="LabourCode" Parameter="labourCode" Type="System.Int32" DbType="Int" />
-    <Parameter Name="OverdueDate" Parameter="overdueDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="InsertDate" Parameter="insertDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="LotNo" Parameter="lotNo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_ItemTransferDetails" Method="ABPrc_ItemTransferDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_ItemTransferDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Labour" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Working" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Cost" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Received_Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ReceivedQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="PendingQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedProductName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ReceivedNewQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedNewUnit" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="QTYDescription" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="QTYCount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
-      <Column Name="ChallanNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ItemCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="LabourCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OverDueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="LotNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_ItemTransferList" Method="ABPrc_ItemTransferList">
-    <Parameter Name="FromDate" Parameter="fromDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="ToDate" Parameter="toDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Working" Parameter="working" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ReceivedStatus" Parameter="receivedStatus" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ChallanNo" Parameter="challanNo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="OverDue" Parameter="overDue" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_ItemTransferListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Labour" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Working" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Cost" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Received_Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ReceivedQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="PendingQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedProductName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ReceivedNewQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedNewUnit" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="QTYDescription" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="QTYCount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="ChallanNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="DateOnly" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="ItemCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="LabourCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OverDueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="TransferQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="DebitQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="DebitAmount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Image" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="LotNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_ItemTransferListExcel" Method="ABPrc_ItemTransferListExcel">
-    <Parameter Name="FromDate" Parameter="fromDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="ToDate" Parameter="toDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Work" Parameter="work" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ReceivedStatus" Parameter="receivedStatus" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ChallanNo" Parameter="challanNo" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_ItemTransferListExcelResult">
-      <Column Name="Date" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="ChallanNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Labour" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Working" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="ReceivedQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="PendingQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TransferQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="DebitQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Cost" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="DebitAmount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_JobWorkDueList" Method="ABPrc_JobWorkDueList">
-    <Parameter Name="FromDate" Parameter="fromDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="ToDate" Parameter="toDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="PaymentStatus" Parameter="paymentStatus" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_JobWorkDueListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ChallanNo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Labour" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="PaymentStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="AmountPaid" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="LabourID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_JobWorkPaymentList" Method="ABPrc_JobWorkPaymentList">
-    <Parameter Name="FromDate" Parameter="fromDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="ToDate" Parameter="toDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ReceiptNo" Parameter="receiptNo" Type="System.String" DbType="VarChar(20)" />
-    <ElementType Name="ABPrc_JobWorkPaymentListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OrderID" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="AmountReceived" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceiptNo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
-      <Column Name="Labour" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_LabourAddEdit" Method="ABPrc_LabourAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Mobile" Parameter="mobile" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="BalanceAmount" Parameter="balanceAmount" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="AdharNo" Parameter="adharNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Father" Parameter="father" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Qualification" Parameter="qualification" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="EmployeeID" Parameter="employeeID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="BankName" Parameter="bankName" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="IFSC" Parameter="iFSC" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AcNo" Parameter="acNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="UPIID" Parameter="uPIID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="LImage" Parameter="lImage" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="LAdhar" Parameter="lAdhar" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="OverdueDays" Parameter="overdueDays" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_LabourDetails" Method="ABPrc_LabourDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_LabourDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="BalanceAmount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertdate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="AdharNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Father" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Qualification" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="EmployeeID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="BankName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="IFSC" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="AcNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="UPIID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="OverdueDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="LImage" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="LAdhar" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_LabourDetailsByName" Method="ABPrc_LabourDetailsByName">
-    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(200)" />
-    <ElementType Name="ABPrc_LabourDetailsByNameResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="BalanceAmount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertdate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="AdharNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Father" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Qualification" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="EmployeeID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="BankName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="IFSC" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="AcNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="UPIID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="OverdueDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="LImage" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="LAdhar" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_LabourList" Method="ABPrc_LabourList">
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_LabourListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="BalanceAmount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertdate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="AdharNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Father" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Qualification" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="EmployeeID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="BankName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="IFSC" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="AcNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="UPIID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="OverdueDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="LImage" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="LAdhar" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_LotWiseList" Method="ABPrc_LotWiseList">
-    <Parameter Name="LotNo" Parameter="lotNo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Pending" Parameter="pending" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_LotWiseListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="LotNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ItemCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Working" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="GivenQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="PendingQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="ChallanNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ChallanNoTable" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_MyCompanyDetail" Method="ABPrc_MyCompanyDetail">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_MyCompanyDetailResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="PAN_Card" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Telephone" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Tag_Line" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="Bank_Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Ac_No" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="ISFC_Code" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Branch" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="WhatsappNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="FactoryAddress" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_MyCompanyList" Method="ABPrc_MyCompanyList">
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <ElementType Name="ABPrc_MyCompanyListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="PAN_Card" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Telephone" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Tag_Line" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="Bank_Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Ac_No" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="ISFC_Code" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Branch" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="WhatsappNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="FactoryAddress" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_OrderDetails" Method="ABPrc_OrderDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <ElementType Name="ABPrc_OrderDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OrderID" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="CSGT" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="SGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="IGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Discount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="State" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="PaymentStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="AmountReceived" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate23" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="OverDueDate" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_OrderList" Method="ABPrc_OrderList">
-    <Parameter Name="FromDate" Parameter="fromDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="ToDate" Parameter="toDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="OFromDate" Parameter="oFromDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="OToDate" Parameter="oToDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="InvNo" Parameter="invNo" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_OrderListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OrderID" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="CSGT" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="SGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="IGST" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Discount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="State" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="PaymentStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="AmountReceived" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="OverDueDate" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_PaymentList" Method="ABPrc_PaymentList">
-    <Parameter Name="InvNo" Parameter="invNo" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="ReceiptNo" Parameter="receiptNo" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_PaymentListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OrderID" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="AmountReceived" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceiptNo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_PurchaseAddEdit" Method="ABPrc_PurchaseAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="CompanyCode" Parameter="companyCode" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Company" Parameter="company" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="ItemCode" Parameter="itemCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Item_Name" Parameter="item_Name" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Price" Parameter="price" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Quantity" Parameter="quantity" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Unit" Parameter="unit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="StyleNo" Parameter="styleNo" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="PurchaseInvNo" Parameter="purchaseInvNo" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="PONo" Parameter="pONo" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="OrderRefNo" Parameter="orderRefNo" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="HSNCode" Parameter="hSNCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="GStPer" Parameter="gStPer" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="OverDueDate" Parameter="overDueDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="EntryDate" Parameter="entryDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="RateBeforeDisc" Parameter="rateBeforeDisc" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Discount" Parameter="discount" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_PurchaseDetails" Method="ABPrc_PurchaseDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_PurchaseDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Company" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Item_Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Price" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Quantity" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Received_Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ReceivedQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ToBeReceivedQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="HSNCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="GSTPer" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="StyleNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="PurchaseInvNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="PONo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="OrderRefNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="OverDueDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="CompanyCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ItemCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RateBeforeDisc" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Discount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_PurchaseDueList" Method="ABPrc_PurchaseDueList">
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="PaymentStatus" Parameter="paymentStatus" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_PurchaseDueListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="PurchaseInvoice" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Company" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="PaymentStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="AmountPaid" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_PurchaseList" Method="ABPrc_PurchaseList">
-    <Parameter Name="FromDate" Parameter="fromDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="ToDate" Parameter="toDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="InvNo" Parameter="invNo" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Overdue" Parameter="overdue" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_PurchaseListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Company" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Item_Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Price" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Quantity" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Received_Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ReceivedQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ToBeReceivedQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="HSNCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="GSTPer" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="StyleNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="PurchaseInvNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="PONo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="OrderRefNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="CompanyCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OverDueDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="RateBeforeDisc" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Discount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_PurchaseOrderAddEdit" Method="ABPrc_PurchaseOrderAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Company" Parameter="company" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="ItemCode" Parameter="itemCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Item_Name" Parameter="item_Name" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Price" Parameter="price" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Quantity" Parameter="quantity" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Unit" Parameter="unit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="StyleNo" Parameter="styleNo" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="PONo" Parameter="pONo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="HSNCode" Parameter="hSNCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ReceivingDate" Parameter="receivingDate" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="GStPer" Parameter="gStPer" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="CompanyID" Parameter="companyID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_PurchaseOrderList" Method="ABPrc_PurchaseOrderList">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="PONo" Parameter="pONo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IsReceived" Parameter="isReceived" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_PurchaseOrderListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Company" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Item_Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Price" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Quantity" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="GSTPer" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="HSNCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="StyleNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ItemCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="PONo" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ReceivingDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="IsReceived" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_PurchasePaymentList" Method="ABPrc_PurchasePaymentList">
-    <Parameter Name="InvNo" Parameter="invNo" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="ReceiptNo" Parameter="receiptNo" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_PurchasePaymentListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="OrderID" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="AmountReceived" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ReceiptNo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
-      <Column Name="Company" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_ReceiveItem" Method="ABPrc_ReceiveItem">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ReceivedQTY" Parameter="receivedQTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="ReceivedItemCode" Parameter="receivedItemCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ReceivedItemName" Parameter="receivedItemName" Type="System.String" DbType="VarChar(2000)" />
-    <Parameter Name="GSTPer" Parameter="gSTPer" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="HSNCode" Parameter="hSNCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="ReceivedNewUnit" Parameter="receivedNewUnit" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="InsertDate" Parameter="insertDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="WorkerChallanNo" Parameter="workerChallanNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ReceivedBy" Parameter="receivedBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ReceivedNewQTY" Parameter="receivedNewQTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Remark" Parameter="remark" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="LotNo" Parameter="lotNo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_SaleOrderAddEdit" Method="ABPrc_SaleOrderAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="CustomerCode" Parameter="customerCode" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Customer" Parameter="customer" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="ItemCode" Parameter="itemCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Item_Name" Parameter="item_Name" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Price" Parameter="price" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Quantity" Parameter="quantity" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Unit" Parameter="unit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="StyleNo" Parameter="styleNo" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="SONo" Parameter="sONo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="HSNCode" Parameter="hSNCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="UploadedBy" Parameter="uploadedBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DeliveryDate" Parameter="deliveryDate" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="GStPer" Parameter="gStPer" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_SaleOrderList" Method="ABPrc_SaleOrderList">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="SONo" Parameter="sONo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="UploadedBy" Parameter="uploadedBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IsDelivered" Parameter="isDelivered" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_SaleOrderListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Item_Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Price" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Quantity" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="GSTPer" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="HSNCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="StyleNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ItemCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="SONo" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="UploadedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="DeliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="IsDelivered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_StockAddEdit" Method="ABPrc_StockAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Company" Parameter="company" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Prefix" Parameter="prefix" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="ItemPrefix" Parameter="itemPrefix" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="ItemPreCode" Parameter="itemPreCode" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Item" Parameter="item" Type="System.String" DbType="VarChar(5000)" />
-    <Parameter Name="QTY" Parameter="qTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Unit" Parameter="unit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="HSNCode" Parameter="hSNCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="GSTPer" Parameter="gSTPer" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Image" Parameter="image" Type="System.String" DbType="VarChar(2000)" />
-    <Parameter Name="Work" Parameter="work" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="StyleNo" Parameter="styleNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="JobRate" Parameter="jobRate" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="MinQTY" Parameter="minQTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_StockDetails" Method="ABPrc_StockDetails">
-    <Parameter Name="StyleNo" Parameter="styleNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_StockDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Company" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="HSNCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="GSTPer" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Image" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="[Work]" Member="Work" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Prefix" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="MinQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ItemPrefix" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="ItemPreCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="StyleNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_StockList" Method="ABPrc_StockList">
-    <Parameter Name="FromDate" Parameter="fromDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="ToDate" Parameter="toDate" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="FilterBy" Parameter="filterBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="WorkFilter" Parameter="workFilter" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="LowQTY" Parameter="lowQTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="HighQTY" Parameter="highQTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_StockListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Company" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="HSNCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="GSTPer" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Color" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Image" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="[Work]" Member="Work" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Prefix" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="MinQTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="ItemPrefix" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="ItemPreCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="StyleNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_StockTransactionList" Method="ABPrc_StockTransactionList">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_StockTransactionListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SRID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="QTY" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="CRDR" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="insertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Remark" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="LabourName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ChallanNo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Working" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Item" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_UpdateCustomerRegApprove" Method="ABPrc_UpdateCustomerRegApprove">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_UpdateItemReceiveList" Method="ABPrc_UpdateItemReceiveList">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ReceivedQTY" Parameter="receivedQTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="ReceivedItemCode" Parameter="receivedItemCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ReceivedProductName" Parameter="receivedProductName" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="ReceivedNewQTY" Parameter="receivedNewQTY" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="ReceivedNewUnit" Parameter="receivedNewUnit" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Remark" Parameter="remark" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_UpdateMyCompany" Method="ABPrc_UpdateMyCompany">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="GSTIN" Parameter="gSTIN" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="PAN_Card" Parameter="pAN_Card" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="Telephone" Parameter="telephone" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="Tag_Line" Parameter="tag_Line" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="Bank_Name" Parameter="bank_Name" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Ac_No" Parameter="ac_No" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ISFC_Code" Parameter="iSFC_Code" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Branch" Parameter="branch" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="WhatsappNo" Parameter="whatsappNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="FactoryAddress" Parameter="factoryAddress" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_VendorDetails" Method="ABPrc_VendorDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_VendorDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="VendorName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="AlternateNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="OverDueDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_VendorList" Method="ABPrc_VendorList">
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_VendorListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="VendorName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Due" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="AlternateNo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="GSTIN" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="OverDueDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_WorkAddEdit" Method="ABPrc_WorkAddEdit">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_WorkDetails" Method="ABPrc_WorkDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_WorkDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABPrc_WorkList" Method="ABPrc_WorkList">
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(500)" />
-    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_WorkListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ABproc_CheckuserLogin" Method="ABproc_CheckuserLogin">
-    <Parameter Name="UserName" Parameter="userName" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="IPAddress" Parameter="iPAddress" Type="System.String" DbType="VarChar(50)" />
-    <ElementType Name="ABproc_CheckuserLoginResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="Settle" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="Balance" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="BalanceAmount" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
-      <Column Name="LoginResult" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.Prc_UpdateRejectRemark" Method="Prc_UpdateRejectRemark">
-    <Parameter Name="RegID" Parameter="regID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="RejectRemark" Parameter="rejectRemark" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="FormStatus" Parameter="formStatus" Type="System.Int32" DbType="Int" />
-    <Parameter Name="OutPut" Parameter="outPut" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.ABPrc_AdminDashboard" Method="ABPrc_AdminDashboard">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ABPrc_AdminDashboardResult">
-      <Column Name="TotalApplication" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="TotalAmount" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
-      <Column Name="PaidApplication" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.Prc_UpdateRandomCustomerAlloty" Method="Prc_UpdateRandomCustomerAlloty">
+  <Function Name="dbo.Prc_CategoryList" Method="Prc_CategoryList">
     <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(200)" />
     <Parameter Name="ApplyFor" Parameter="applyFor" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.Prc_UpdateAmount" Method="Prc_UpdateAmount">
-    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Price" Parameter="price" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="Amount" Parameter="amount" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.Prc_FormListCategoryWise" Method="Prc_FormListCategoryWise">
-    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="FormStatus" Parameter="formStatus" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Alloty" Parameter="alloty" Type="System.Int32" DbType="Int" />
-    <Parameter Name="FormNo" Parameter="formNo" Type="System.Int32" DbType="Int" />
-    <ElementType Name="Prc_FormListCategoryWiseResult">
+    <ElementType Name="Prc_CategoryListResult">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="SrNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Father" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RegNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Alloty" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="RegID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="FormStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="RejectRemark" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
-      <Column Name="Contact" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Relation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RelationName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
       <Column Name="ApplyFor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="AllotmentCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_CategoryWiseApplication" Method="Prc_CategoryWiseApplication">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Prc_CategoryWiseApplicationResult">
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="EWSCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LIGCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_CategoryWisePlotAllotment" Method="Prc_CategoryWisePlotAllotment">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Prc_CategoryWisePlotAllotmentResult">
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="EWSCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LIGCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.Prc_ContactList" Method="Prc_ContactList">
@@ -1487,14 +182,117 @@
       <Column Name="Relation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.Prc_UpdateDDReturn" Method="Prc_UpdateDDReturn">
+  <Function Name="dbo.Prc_Create_OrderNumber" Method="Prc_Create_OrderNumber">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Prc_Create_OrderNumberResult">
+      <Column Name="OrderNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_Create_OrderSummary" Method="Prc_Create_OrderSummary">
+    <Parameter Name="CustomerID" Parameter="customerID" Type="System.Int32" DbType="Int" />
     <Parameter Name="RegID" Parameter="regID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="DDReturnToName" Parameter="dDReturnToName" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DDReturnIDName" Parameter="dDReturnIDName" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DDReturnIDValue" Parameter="dDReturnIDValue" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DDReturn" Parameter="dDReturn" Type="System.Int32" DbType="Int" />
-    <Parameter Name="OutPut" Parameter="outPut" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Parameter Name="FormID" Parameter="formID" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Order_ID" Parameter="order_ID" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Total_Price" Parameter="total_Price" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="Payment_Status" Parameter="payment_Status" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="AmountReceived" Parameter="amountReceived" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="RefundAmount" Parameter="refundAmount" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="RefundDetail" Parameter="refundDetail" Type="System.String" DbType="VarChar(2000)" />
+    <Parameter Name="insertDate" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PaymentDate" Parameter="paymentDate" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="RefundDate" Parameter="refundDate" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SessionID" Parameter="sessionID" Type="System.String" DbType="VarChar(100)" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Prc_DeleteContactList" Method="Prc_DeleteContactList">
+    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Prc_DisctinctLotteryNo" Method="Prc_DisctinctLotteryNo">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Prc_DisctinctLotteryNoResult">
+      <Column Name="TrialNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_FormCategoryDisctinct" Method="Prc_FormCategoryDisctinct">
+    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="Prc_FormCategoryDisctinctResult">
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_Formlist" Method="Prc_Formlist">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ApplyFor" Parameter="applyFor" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="RegNo" Parameter="regNo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Alloty" Parameter="alloty" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FormStatus" Parameter="formStatus" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Prc_FormlistResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SrNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RelationName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Alloty" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PlotNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FormStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RejectRemark" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="PlotCategory" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ApplicantCategory" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_FormListCategoryWise" Method="Prc_FormListCategoryWise">
+    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="FormStatus" Parameter="formStatus" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Alloty" Parameter="alloty" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FormNo" Parameter="formNo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Prc_FormListCategoryWiseResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SrNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Father" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Alloty" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RegID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FormStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RejectRemark" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="PlotNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlotCategory" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ApplicantCategory" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_FormlistExport" Method="Prc_FormlistExport">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ApplyFor" Parameter="applyFor" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="RegNo" Parameter="regNo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Alloty" Parameter="alloty" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FormStatus" Parameter="formStatus" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Prc_FormlistExportResult">
+      <Column Name="RowNum" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RegNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RelationName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MobileNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PlotCategory" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ApplicantCategory" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FormStatus" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="RejectRemark" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_GeneralSettingDetails" Method="Prc_GeneralSettingDetails">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Prc_GeneralSettingDetailsResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsFinalLottery" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NextLotteryTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
   </Function>
   <Function Name="dbo.Prc_RegisterList" Method="Prc_RegisterList">
     <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
@@ -1536,22 +334,6 @@
       <Column Name="DDReturnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.Prc_CategoryWiseApplication" Method="Prc_CategoryWiseApplication">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="Prc_CategoryWiseApplicationResult">
-      <Column Name="CategoryName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="EWSCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="LIGCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.Prc_GeneralSettingDetails" Method="Prc_GeneralSettingDetails">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="Prc_GeneralSettingDetailsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IsFinalLottery" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="NextLotteryTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.Prc_ResetTrialLottery" Method="Prc_ResetTrialLottery">
     <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
@@ -1568,72 +350,6 @@
     <Parameter Name="TrialNo" Parameter="trialNo" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="SeedNo" Parameter="seedNo" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.Prc_TrialLotteryList" Method="Prc_TrialLotteryList">
-    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="TrialNo" Parameter="trialNo" Type="System.Int32" DbType="Int" />
-    <ElementType Name="Prc_TrialLotteryListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CustomerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Father" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RegNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="PlotNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="PlotCategory" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="ApplicantCategory" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="TrialNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.Prc_UpdateSetLotteryTimer" Method="Prc_UpdateSetLotteryTimer">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IsFinalLottery" Parameter="isFinalLottery" Type="System.Int32" DbType="Int" />
-    <Parameter Name="OutPut" Parameter="outPut" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.Prc_CategoryList" Method="Prc_CategoryList">
-    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="ApplyFor" Parameter="applyFor" Type="System.String" DbType="VarChar(100)" />
-    <ElementType Name="Prc_CategoryListResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CategoryName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="ApplyFor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="AllotmentCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.Prc_FormCategoryDisctinct" Method="Prc_FormCategoryDisctinct">
-    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(100)" />
-    <ElementType Name="Prc_FormCategoryDisctinctResult">
-      <Column Name="CategoryName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.Prc_DisctinctLotteryNo" Method="Prc_DisctinctLotteryNo">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="Prc_DisctinctLotteryNoResult">
-      <Column Name="TrialNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.Prc_CategoryWisePlotAllotment" Method="Prc_CategoryWisePlotAllotment">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="Prc_CategoryWisePlotAllotmentResult">
-      <Column Name="CategoryName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="EWSCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="LIGCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.Prc_UpdateDDAmount" Method="Prc_UpdateDDAmount">
-    <Parameter Name="RegID" Parameter="regID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AccountHolderName" Parameter="accountHolderName" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="BankName" Parameter="bankName" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="BankAccountNumber" Parameter="bankAccountNumber" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="IFSCCode" Parameter="iFSCCode" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="BankAddress" Parameter="bankAddress" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DDAmount" Parameter="dDAmount" Type="System.Decimal" DbType="Decimal(12,2)" />
-    <Parameter Name="DDNumber" Parameter="dDNumber" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DDDepositer" Parameter="dDDepositer" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DDDepositerID" Parameter="dDDepositerID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DDDepositerIDNo" Parameter="dDDepositerIDNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DDDepositorRelation" Parameter="dDDepositorRelation" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="OutPut" Parameter="outPut" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.Prc_Transactionlist" Method="Prc_Transactionlist">
@@ -1696,28 +412,92 @@
       <Column Name="DDDepositorRelation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.Prc_Formlist" Method="Prc_Formlist">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="SearchBy" Parameter="searchBy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="ApplyFor" Parameter="applyFor" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="RegNo" Parameter="regNo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Alloty" Parameter="alloty" Type="System.Int32" DbType="Int" />
-    <Parameter Name="FormStatus" Parameter="formStatus" Type="System.Int32" DbType="Int" />
-    <ElementType Name="Prc_FormlistResult">
+  <Function Name="dbo.Prc_TrialLotteryList" Method="Prc_TrialLotteryList">
+    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PlotCategory" Parameter="plotCategory" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="TrialNo" Parameter="trialNo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Prc_TrialLotteryListResult">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="CustomerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="SrNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="RelationName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RegNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Alloty" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Father" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="PlotNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RegID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="FormStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="RejectRemark" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
       <Column Name="PlotCategory" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="ApplicantCategory" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ApplicantCategory" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TrialNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.Prc_UpdateAmount" Method="Prc_UpdateAmount">
+    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Price" Parameter="price" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="Amount" Parameter="amount" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Prc_UpdateDDAmount" Method="Prc_UpdateDDAmount">
+    <Parameter Name="RegID" Parameter="regID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AccountHolderName" Parameter="accountHolderName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="BankName" Parameter="bankName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="BankAccountNumber" Parameter="bankAccountNumber" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="IFSCCode" Parameter="iFSCCode" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="BankAddress" Parameter="bankAddress" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DDAmount" Parameter="dDAmount" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="DDNumber" Parameter="dDNumber" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DDDepositer" Parameter="dDDepositer" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DDDepositerID" Parameter="dDDepositerID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DDDepositerIDNo" Parameter="dDDepositerIDNo" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DDDepositorRelation" Parameter="dDDepositorRelation" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="OutPut" Parameter="outPut" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Prc_UpdateDDReturn" Method="Prc_UpdateDDReturn">
+    <Parameter Name="RegID" Parameter="regID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DDReturnToName" Parameter="dDReturnToName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DDReturnIDName" Parameter="dDReturnIDName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DDReturnIDValue" Parameter="dDReturnIDValue" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DDReturn" Parameter="dDReturn" Type="System.Int32" DbType="Int" />
+    <Parameter Name="OutPut" Parameter="outPut" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Prc_UpdatePagePermission" Method="Prc_UpdatePagePermission">
+    <Parameter Name="PermissionID" Parameter="permissionID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Prc_UpdatePaymentStatus" Method="Prc_UpdatePaymentStatus">
+    <Parameter Name="OrderID" Parameter="orderID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Txn_id" Parameter="txn_id" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Payer_Email" Parameter="payer_Email" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="CardType" Parameter="cardType" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PaymentType" Parameter="paymentType" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="PaymentStatus" Parameter="paymentStatus" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="xBatch" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="xRefNum" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="xName" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="xMaskedCardNumber" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Employee" Parameter="employee" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Amount" Parameter="amount" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="CustomerName" Parameter="customerName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Father" Parameter="father" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="FormNo" Parameter="formNo" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="RegId" Parameter="regId" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Prc_UpdateRandomCustomerAlloty" Method="Prc_UpdateRandomCustomerAlloty">
+    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ApplyFor" Parameter="applyFor" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Prc_UpdateRejectRemark" Method="Prc_UpdateRejectRemark">
+    <Parameter Name="RegID" Parameter="regID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="RejectRemark" Parameter="rejectRemark" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="FormStatus" Parameter="formStatus" Type="System.Int32" DbType="Int" />
+    <Parameter Name="OutPut" Parameter="outPut" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Prc_UpdateSetLotteryTimer" Method="Prc_UpdateSetLotteryTimer">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsFinalLottery" Parameter="isFinalLottery" Type="System.Int32" DbType="Int" />
+    <Parameter Name="OutPut" Parameter="outPut" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

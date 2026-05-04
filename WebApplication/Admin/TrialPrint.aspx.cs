@@ -26,7 +26,7 @@ namespace WebApplicationAdmin
         }
         protected void gvbind()
         {
-            grdView.DataSource = objBLL.TrialLotteryList(drpCategory.SelectedValue, Convert.ToInt32(drpLotteryNo.SelectedValue), 1, out _);
+            grdView.DataSource = objBLL.TrialLotteryList(drpCategory.SelectedValue, drpPlotCategory.SelectedValue, Convert.ToInt32(drpLotteryNo.SelectedValue), 1, out _);
             grdView.DataBind();
 
             ltrLotteryNo.Text = drpLotteryNo.SelectedValue;

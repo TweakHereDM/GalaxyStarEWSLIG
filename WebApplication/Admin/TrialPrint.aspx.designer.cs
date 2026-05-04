@@ -42,6 +42,15 @@ namespace WebApplicationAdmin
         protected global::System.Web.UI.WebControls.Literal ltrSeedNo;
 
         /// <summary>
+        /// drpPlotCategory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drpPlotCategory;
+
+        /// <summary>
         /// drpCategory control.
         /// </summary>
         /// <remarks>

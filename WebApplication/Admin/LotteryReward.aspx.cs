@@ -124,58 +124,55 @@ namespace WebApplication
                 }
                 //WebsiteSession.SetDate = Literal1.Text = DateTime.Now.AddMinutes(5).ToString("MMM dd, yyyy H:mm:ss");
 
-                //Apply For Is Visible
-                var Category = objBLL.FormCategoryDisctinct(drpCategory.SelectedValue, out _);
-                foreach (var Cat in Category)
-                {
-
-                    var GetCount = objBLL.CategoryList(Cat.CategoryName, DrpApplyFor.SelectedValue, out _); //Apply
-                    if (GetCount.Count() > 0)
-                    {
-                        foreach (var item in GetCount)
-                        {
-
-                            var FormCount = objBLL.Formlist(0, null, Cat.CategoryName, DrpApplyFor.SelectedValue, 0, 1, 1, out _);
-                            if (FormCount.Count == 0)
-                            {
-                                for (int i = 0; i < item.AllotmentCount; i++)
-                                {
-                                    objBLL.UpdateRandomCustomerAlloty(Cat.CategoryName, DrpApplyFor.SelectedValue);
-                                }
-                            }
-                        }
-
-                    }
-
-                }
-
-                //Apply For Is Hide
+                ////Apply For Is Visible
                 //var Category = objBLL.FormCategoryDisctinct(drpCategory.SelectedValue, out _);
                 //foreach (var Cat in Category)
                 //{
-                //    var ApplyFor = new List<string> { "EWS", "LIG" };
-                //    foreach (var Apply in ApplyFor)
+
+                //    var GetCount = objBLL.CategoryList(Cat.CategoryName, DrpApplyFor.SelectedValue, out _); //Apply
+                //    if (GetCount.Count() > 0)
                 //    {
-
-                //        var GetCount = objBLL.CategoryList(Cat.CategoryName, Apply, out _);
-                //        if (GetCount.Count() > 0)
+                //        foreach (var item in GetCount)
                 //        {
-                //            foreach (var item in GetCount)
-                //            {
 
-                //                var FormCount = objBLL.Formlist(0, null, Cat.CategoryName, Apply, 0, 1, out _);
-                //                if (FormCount.Count == 0)
+                //            var FormCount = objBLL.Formlist(0, null, Cat.CategoryName, DrpApplyFor.SelectedValue, 0, 1, 1, out _);
+                //            if (FormCount.Count == 0)
+                //            {
+                //                for (int i = 0; i < item.AllotmentCount; i++)
                 //                {
-                //                    for (int i = 0; i < item.AllotmentCount; i++)
-                //                    {
-                //                        objBLL.UpdateRandomCustomerAlloty(Cat.CategoryName, Apply);
-                //                    }
+                //                    objBLL.UpdateRandomCustomerAlloty(Cat.CategoryName, DrpApplyFor.SelectedValue);
                 //                }
                 //            }
-
                 //        }
+
                 //    }
+
                 //}
+
+                //Apply For Is Hide
+                var Category = objBLL.FormCategoryDisctinct(drpCategory.SelectedValue, out _);
+                foreach (var Cat in Category)
+                {
+                    var ApplyFor = new List<string> { "EWS", "LIG" };
+                    foreach (var Apply in ApplyFor)
+                    {
+
+                        var GetCount = objBLL.CategoryList(Cat.CategoryName, Apply, out _);
+                        if (GetCount.Count() > 0)
+                        {
+                            foreach (var item in GetCount)
+                            {
+
+                                for (int i = 0; i < item.AllotmentCount; i++)
+                                {
+                                    objBLL.UpdateRandomCustomerAlloty(Cat.CategoryName, Apply);
+                                }
+
+                            }
+
+                        }
+                    }
+                }
 
                 WebsiteSession.CountNo = 1;
 
@@ -215,6 +212,19 @@ namespace WebApplication
 
         protected void DrpApplyFor_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+            if (drpCategory.SelectedValue == "Un-Reserved-Women(Widow and Landless)")
+            {
+                DrpApplyFor.Items.Remove(DrpApplyFor.Items.FindByValue("LIG"));
+            }
+            else
+            {
+                if (DrpApplyFor.Items.FindByValue("LIG") == null)
+                {
+                    DrpApplyFor.Items.Add("LIG");
+                }
+            }
+
             int CountRecord = 0;
             ltrAllotmentCount.Text = "0";
             ltrApplyFor.Text = DrpApplyFor.SelectedValue;

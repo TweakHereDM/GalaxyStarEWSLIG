@@ -25,16 +25,20 @@ namespace WebApplicationAdmin
         }
         protected void gvbind()
         {
-            //if (Convert.ToDateTime(WebsiteSession.SetDate) < DateTime.Now)
-            //{
-                grdView.DataSource = objBLL.FormlistTake1by1(0, null, drpCategory.SelectedValue, null, 0, 1, 91, out _);
-                grdView.DataBind();
-            //}
-
-            Prc_TrailNoListWithSeedResult objUser = objBLL.TrailNoListWithSeed("Final");
-            if (objUser != null)
+            int CountRecord = 0;
+            var Final = objBLL.FormlistTake1by1(0, null, null, null, 0, 1, 91, out CountRecord);
+            if (CountRecord == 79)
             {
-                ltrSeedNo.Text = objUser.SeedNo.ToString();
+                Prc_TrailNoListWithSeedResult objUser = objBLL.TrailNoListWithSeed("Final");
+                if (objUser != null)
+                {
+                    grdView.DataSource = objBLL.FormlistTake1by1(0, null, drpCategory.SelectedValue, drpPlotCategory.SelectedValue, 0, 1, 91, out _);
+                    grdView.DataBind();
+
+
+                    ltrSeedNo.Text = objUser.SeedNo.ToString();
+                }
+
             }
 
         }

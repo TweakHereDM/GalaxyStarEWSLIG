@@ -2,6 +2,7 @@
 using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Services.Description;
@@ -74,6 +75,55 @@ namespace WebApplication.Admin
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", $"alert('{Message}');", true);
             }
             gvbind();
+        }
+
+        protected void btnExport_Click(object sender, EventArgs e)
+        {
+            int CountRecords = 0;
+            string FormID = txtFormID.Text == "" ? "0" : txtFormID.Text;
+
+            GridView dgGrid = new GridView();
+
+
+            dgGrid.DataSource = objBLL.FormlistExport(0, txtSearch.Text, drpCategory.SelectedValue, DrpApplyFor.SelectedValue, Convert.ToInt32(FormID), 2, Convert.ToInt32(drpFormStatus.SelectedValue), out CountRecords);
+            dgGrid.DataBind();
+
+            dgGrid.HeaderRow.Cells[0].Text = "Sr No";
+            dgGrid.HeaderRow.Cells[1].Text = "Form ID/ No";
+            dgGrid.HeaderRow.Cells[2].Text = "Applicant Name";
+            dgGrid.HeaderRow.Cells[3].Text = "Father/ Husband Name";
+            dgGrid.HeaderRow.Cells[4].Text = "Mobile No";
+            dgGrid.HeaderRow.Cells[5].Text = "Apply For (LIG/EWS)";
+            dgGrid.HeaderRow.Cells[6].Text = "Category";
+            dgGrid.HeaderRow.Cells[7].Text = "Form Status";
+            dgGrid.HeaderRow.Cells[8].Text = "Reject Remark";
+            
+            DataTable dt = new DataTable();
+
+            if (dgGrid.HeaderRow != null)
+            {
+
+                for (int i = 0; i < dgGrid.HeaderRow.Cells.Count; i++)
+                {
+                    dt.Columns.Add(dgGrid.HeaderRow.Cells[i].Text);
+                }
+            }
+
+            //  add each of the data rows to the table
+            foreach (GridViewRow row in dgGrid.Rows)
+            {
+                DataRow dr;
+                dr = dt.NewRow();
+
+                for (int i = 0; i < row.Cells.Count; i++)
+                {
+                    dr[i] = row.Cells[i].Text.Replace("&nbsp;", "");
+                }
+                dt.Rows.Add(dr);
+            }
+
+
+            objBLL.ExportToExcelByDT(dt, string.Format("StarCityFormList.xls", DateTime.UtcNow.AddMinutes(330)).ToString());
         }
     }
 }

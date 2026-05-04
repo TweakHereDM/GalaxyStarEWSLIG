@@ -15,6 +15,9 @@
 
     <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
+          select {
+      padding: 5px !important;
+  }
         th {
             background-color: #f5f5f5;
             text-align: center;
@@ -94,7 +97,15 @@
                     <div class="tab-pane fade show active" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-details">
 
                         <div class="row g-4">
-                            <div class="col-md-4" style="float: right">
+                            <div class="col-md-4" style="float: right; padding: 10px;">
+                                Plot Category:
+    <asp:DropDownList ID="drpPlotCategory" runat="server" AutoPostBack="true" CssClass="form-control" OnSelectedIndexChanged="drpLotteryNo_SelectedIndexChanged">
+        <asp:ListItem Value="EWS">EWS</asp:ListItem>
+        <asp:ListItem Value="LIG">LIG</asp:ListItem>
+    </asp:DropDownList>
+
+                            </div>
+                            <div class="col-md-4" style="float: right; padding: 10px;">
                                 Select Category:
                                 <asp:DropDownList ID="drpCategory" runat="server" AutoPostBack="true" CssClass="form-control" OnSelectedIndexChanged="drpLotteryNo_SelectedIndexChanged">
                                 </asp:DropDownList>

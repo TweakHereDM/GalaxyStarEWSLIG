@@ -119,9 +119,9 @@
                                         <asp:GridView ID="grdView" runat="server" AutoGenerateColumns="false" Font-Size="11pt"
                                             DataKeyNames="ID" CssClass="grid" PageSize="100" Width="100%" CellPadding="10" OnRowDataBound="grdView_RowDataBound">
                                             <Columns>
-                                                <asp:BoundField DataField="ApplyFor" HeaderText="Apply For" />
+                                                <asp:BoundField DataField="PlotCategory" HeaderText="Apply For" />
                                                 <asp:BoundField DataField="RegNo" HeaderText="Form No" />
-                                                <asp:BoundField DataField="Category" HeaderText="Category" />
+                                                <asp:BoundField DataField="ApplicantCategory" HeaderText="Category" />
 
                                                 <asp:TemplateField HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center"
                                                     HeaderText="Customer Details">
@@ -129,10 +129,7 @@
 
                                                         <%#Eval("CustomerName") %>
                                                         <br />
-
-                                                        (<%#Eval("Contact") %>)
-                                                        <br />
-                                                        <%#Eval("Relation") %> Name: <%#Eval("RelationName") %>
+                                                        Father/ Husband Name: <%#Eval("Father") %>
                                                     </ItemTemplate>
                                                     <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 

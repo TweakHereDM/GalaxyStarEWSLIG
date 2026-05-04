@@ -143,15 +143,15 @@
                                                     <li>
                                                         <a id="Apply" runat="server" href="Apply.aspx" target="_blank" class=" font-weight-bold text-5 py-2">Apply <i class="fas fa-arrow-right ms-2"></i></a>
                                                     </li>
-                                                    <%--<li style="text-align: center">
-                                                        <a href="javascript:void(0)" class=" font-weight-bold text-5 py-2">Final List<i class="fas fa-arrow-right ms-2"></i></a>
-                                                        <p class="mar" style="color:var(--dark);">Status of Application in Final List<i class="fas fa-arrow-up ms-2"></i></p>
+                                                    <li style="text-align: center">
+                                                        <a href="FormList.aspx" class=" font-weight-bold text-5 py-2">Final List<i class="fas fa-arrow-right ms-2"></i></a>
+                                                        <p class="mar" style="color: var(--dark);">Status of Application in Final List<i class="fas fa-arrow-up ms-2"></i></p>
                                                     </li>
-                                                    <li>
+                                                    <%--<li>
                                                         <a href="AllotmentList.aspx" class=" font-weight-bold text-5 py-2">Final Lottery Allotment<i class="fas fa-arrow-down ms-2"></i></a>
                                                     </li>--%>
                                                     <li>
-                                                        <a href="ReceiptList.aspx" class=" font-weight-bold text-5 py-2">Get Receipt<i class="fas fa-arrow-down ms-2"></i></a>
+                                                        <a href="ReceiptList.aspx" class=" font-weight-bold text-5 py-2">Get Receipt/ Form<i class="fas fa-arrow-down ms-2"></i></a>
                                                     </li>
 
 
@@ -206,12 +206,19 @@
                                     Welcome to The Galaxy Realmart Pvt Ltd
                                 </p>--%>
                                 <h1 style="color: white;">Welcome to The Galaxy Realmart Pvt Ltd
-                                    <p style="color: white; font-size: 20px;">
-                                        <%--class="text-4-5 text-color-light font-weight-light opacity-9 mb-4" data-plugin-animated-letters data-plugin-options="{'startDelay': 1500, 'minWindowWidth': 0, 'animationSpeed': 50}"--%>
-                                        Those who have submitted their forms, please submit your DD and other related documents at registered office address before 20 April 2026 5:00 PM
+                                    <%--<p style="color: white; font-size: 20px;">
+                                        class="text-4-5 text-color-light font-weight-light opacity-9 mb-4" data-plugin-animated-letters data-plugin-options="{'startDelay': 1500, 'minWindowWidth': 0, 'animationSpeed': 50}"
+                                         - Those who have submitted their forms, please submit your DD and other related documents at registered office address before 20 April 2026 5:00 PM
                                     </p>
                                     <p style="color: white; font-size: 20px;">
-                                        जिन लोगों ने अपने फॉर्म जमा कर दिए हैं, कृपया अपने डिमांड ड्राफ्ट (DD) और अन्य संबंधित दस्तावेज़ 20 अप्रैल 2026 को शाम 5:00 बजे से पहले पंजीकृत कार्यालय के पते पर जमा करें।
+                                        - जिन लोगों ने अपने फॉर्म जमा कर दिए हैं, कृपया अपने डिमांड ड्राफ्ट (DD) और अन्य संबंधित दस्तावेज़ 20 अप्रैल 2026 को शाम 5:00 बजे से पहले पंजीकृत कार्यालय के पते पर जमा करें।
+                                    </p>--%>
+
+                                    <%--<p style="color: white; font-size: 20px; font-family:monospace">
+                                        - लाटरी निकलने का समय दोपहर 2 बजे हैं| कृपया अपना आधार कार्ड लेके आये| लाटरी स्थल पर प्रवेश सिर्फ आधार कार्ड से दिया जायेगा और जिन्होंने फॉर्म भरा है सिर्फ उनको ही प्रवेश दिया जायेगा| अन्य व्यक्तियों का प्रवेश वर्जित हैं| 
+                                    </p>--%>
+                                    <p style="color: white; font-size: 20px; font-family: monospace">
+                                        - आज दिनांक 29-04-2026 को आयोजित की जाने वाली लॉटरी प्रक्रिया के दौरान कुछ आवेदकों द्वारा व्यवधान उत्पन्न किए जाने के कारण लॉटरी संपादित नहीं की जा सकी। अतः अगली तिथि निर्धारित होते ही इसकी सूचना वेबसाइट के माध्यम से प्रदान कर दी जाएगी। 
                                     </p>
 
                                 </h1>

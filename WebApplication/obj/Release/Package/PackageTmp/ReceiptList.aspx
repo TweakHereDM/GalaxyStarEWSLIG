@@ -167,9 +167,9 @@
                                         <asp:TemplateField HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center"
                                             ItemStyle-Width="180px" HeaderText="Receipt">
                                             <ItemTemplate>
-                                                <a href='ReceiptDownload.aspx?ref=<%#Eval("FormID") %>'>Receipt</a>
+                                                <a href='ReceiptDownload.aspx?ref=<%#Eval("FormID") %>' class="btn btn-success" style="margin-bottom:10px;">Receipt</a>
                                                 <br />
-                                                <a href='FormPrint.aspx?ref=<%#Eval("FormID") %>'>Form</a>
+                                                <a href='PrintForm.aspx?ref=<%#Eval("FormID") %>' class="btn btn-danger">Form</a>
 
                                             </ItemTemplate>
                                             <HeaderStyle HorizontalAlign="Center"></HeaderStyle>

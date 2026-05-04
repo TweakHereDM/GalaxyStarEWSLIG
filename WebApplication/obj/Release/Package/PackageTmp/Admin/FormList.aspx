@@ -64,6 +64,8 @@
                             <br />
                             <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn-success btn"
                                 OnClick="btnSearch_Click" />
+                            <asp:Button ID="btnExport" runat="server" Text="Export" CssClass="btn btn-danger"
+                                OnClick="btnExport_Click" />
 
                         </div>
                     </div>

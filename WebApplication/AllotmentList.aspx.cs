@@ -27,7 +27,7 @@ namespace WebApplication
 
         protected void gvbind()
         {
-            grdView.DataSource = objBLL.ContactList(null, null, null, 1, 2, out CountRecords);
+            grdView.DataSource = objBLL.Formlist(0, null, null, null, 0, 1, -1, out CountRecords);
             grdView.DataBind();
         }
         

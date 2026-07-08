@@ -104,8 +104,8 @@
                                         <asp:BoundField DataField="RegNo" HeaderText="Form No" />
                                         <asp:BoundField DataField="PlotNo" HeaderText="Plot No" />
 
-                                        <asp:BoundField DataField="ApplyFor" HeaderText="Apply For" />
-                                        <asp:BoundField DataField="Category" HeaderText="Category" />
+                                        <asp:BoundField DataField="PlotCategory" HeaderText="Apply For" />
+                                        <asp:BoundField DataField="ApplicantCategory" HeaderText="Category" />
 
                                         <asp:TemplateField HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center"
                                             HeaderText="Customer Details">
@@ -114,7 +114,7 @@
                                                 <b>Customer Name:</b><%#Eval("CustomerName") %>
                                                 <br />
                                              
-                                                <b><%#Eval("Relation") %> Name:</b> <%#Eval("RelationName") %>
+                                                <b>Father/Husband Name:</b> <%#Eval("RelationName") %>
                                             </ItemTemplate>
                                             <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 

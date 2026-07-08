@@ -140,16 +140,16 @@
 
                                                     </li>
 
-                                                    <li>
+                                                    <!--<li>
                                                         <a id="Apply" runat="server" href="Apply.aspx" target="_blank" class=" font-weight-bold text-5 py-2">Apply <i class="fas fa-arrow-right ms-2"></i></a>
                                                     </li>
                                                     <li style="text-align: center">
                                                         <a href="FormList.aspx" class=" font-weight-bold text-5 py-2">Final List<i class="fas fa-arrow-right ms-2"></i></a>
                                                         <p class="mar" style="color: var(--dark);">Status of Application in Final List<i class="fas fa-arrow-up ms-2"></i></p>
-                                                    </li>
-                                                    <%--<li>
+                                                    </li> -->
+                                                    <li>
                                                         <a href="AllotmentList.aspx" class=" font-weight-bold text-5 py-2">Final Lottery Allotment<i class="fas fa-arrow-down ms-2"></i></a>
-                                                    </li>--%>
+                                                    </li>
                                                     <li>
                                                         <a href="ReceiptList.aspx" class=" font-weight-bold text-5 py-2">Get Receipt/ Form<i class="fas fa-arrow-down ms-2"></i></a>
                                                     </li>
@@ -214,10 +214,16 @@
                                         - जिन लोगों ने अपने फॉर्म जमा कर दिए हैं, कृपया अपने डिमांड ड्राफ्ट (DD) और अन्य संबंधित दस्तावेज़ 20 अप्रैल 2026 को शाम 5:00 बजे से पहले पंजीकृत कार्यालय के पते पर जमा करें।
                                     </p>--%>
 
-                                    <p style="color: white; font-size: 20px; font-family:monospace">
-                                        - लाटरी निकलने का समय दोपहर 2 बजे हैं| कृपया अपना आधार कार्ड लेके आये| लाटरी स्थल पर प्रवेश सिर्फ आधार कार्ड से दिया जायेगा और जिन्होंने फॉर्म भरा है सिर्फ उनको ही प्रवेश दिया जायेगा| अन्य व्यक्तियों का प्रवेश वर्जित हैं| 
-                                    </p>
 
+                                    <%--<p style="color: white; font-size: 20px; font-family: monospace">
+                                        - आज दिनांक 29-04-2026 को आयोजित की जाने वाली लॉटरी प्रक्रिया के दौरान कुछ आवेदकों द्वारा व्यवधान उत्पन्न किए जाने के कारण लॉटरी संपादित नहीं की जा सकी। अतः अगली तिथि निर्धारित होते ही इसकी सूचना वेबसाइट के माध्यम से प्रदान कर दी जाएगी। 
+                                    </p>
+                                    <p style="color: white; font-size: 20px; font-family: monospace">
+                                        - पुनः ऑनलाइन लाटरी दिनांक 7 जुलाई 2026 को दोपहर 2 बजे विकासकर्ता के पंजीकृत कार्यालय पर आयोजित की जावेगी| कृपया अपना मूल (Original) आधार कार्ड लेके आये| लाटरी स्थल पर प्रवेश सिर्फ आधार कार्ड से दिया जायेगा और जिन्होंने फॉर्म भरा है सिर्फ उनको ही प्रवेश दिया जायेगा| अन्य व्यक्तियों का प्रवेश वर्जित हैं| 
+                                    </p>--%>
+                                    <p style="color: white; font-size: 20px; font-family: monospace">
+                                        - जिन आवेदकों का नाम लॉटरी प्रक्रिया में चयनित नहीं हुआ है, वे अपना डिमांड ड्राफ्ट (DD) दिनांक 08 जुलाई 2026 से पंजीकृत कार्यालय के पते से कार्यालय समय (10AM - 5PM) के दौरान प्राप्त कर सकते हैं। डिमांड ड्राफ्ट प्राप्त करने हेतु आवेदक स्वयं उपस्थित होकर आधार कार्ड की मूल प्रति एवं रसीद की प्रति साथ लेकर आएँ। डिमांड ड्राफ्ट केवल संबंधित आवेदक को ही प्रदान किया जाएगा। 
+                                    </p>
                                 </h1>
                                 <a id="Apply1" runat="server" href="Apply.aspx" target="_blank" class="btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2200" data-appear-animation-duration="1.2s" data-plugin-options="{'minWindowWidth': 0}">APPLY<i class="fas fa-arrow-right ms-2"></i></a>
                             </div>
@@ -293,6 +299,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <img src="/assets/img/RevisedPaper.jpeg" class="img-fluid" alt="" />
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="/assets/img/PressRelease6July26.jpeg" class="img-fluid" alt="" />
                                 </div>
                             </div>
                         </div>

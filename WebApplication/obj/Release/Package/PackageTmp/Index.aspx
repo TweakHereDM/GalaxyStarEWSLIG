@@ -224,6 +224,9 @@
                                     <p style="color: white; font-size: 20px; font-family: monospace">
                                         - जिन आवेदकों का नाम लॉटरी प्रक्रिया में चयनित नहीं हुआ है, वे अपना डिमांड ड्राफ्ट (DD) दिनांक 08 जुलाई 2026 से पंजीकृत कार्यालय के पते से कार्यालय समय (10AM - 5PM) के दौरान प्राप्त कर सकते हैं। डिमांड ड्राफ्ट प्राप्त करने हेतु आवेदक स्वयं उपस्थित होकर आधार कार्ड की मूल प्रति एवं रसीद की प्रति साथ लेकर आएँ। डिमांड ड्राफ्ट केवल संबंधित आवेदक को ही प्रदान किया जाएगा। 
                                     </p>
+                                    <p style="color: white; font-size: 20px; font-family: monospace">
+                                        - जिन आवेदकों का लॉटरी प्रक्रिया में चयन हो गया है, वे अपना आवंटन पत्र (Allotment Letter) एवं मांग पत्र यथाशीघ्र पंजीकृत कार्यालय से प्राप्त कर आगे की आवश्यक कार्यवाही सुनिश्चित करें।
+                                    </p>
                                 </h1>
                                 <a id="Apply1" runat="server" href="Apply.aspx" target="_blank" class="btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2200" data-appear-animation-duration="1.2s" data-plugin-options="{'minWindowWidth': 0}">APPLY<i class="fas fa-arrow-right ms-2"></i></a>
                             </div>

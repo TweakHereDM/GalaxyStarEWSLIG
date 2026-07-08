@@ -537,6 +537,18 @@ namespace BusinessLogicLayer
             return ErrMsg;
         }
 
+        
+        public string CheckSeedNo(int SeedNo)
+        {
+            string ErrMsg = "!";
+            using (WebsiteDataContext ObjContext = new WebsiteDataContext())
+            {
+                ObjContext.Prc_CheckSeedNo(SeedNo, ref ErrMsg);
+            }
+
+            return ErrMsg;
+        }
+
         public string UpdateDDReturn(int ID,  string DDReturnToName, string DDReturnIDName, string DDReturnIDValue, int DDReturn)
         {
             string ErrMsg = "!";

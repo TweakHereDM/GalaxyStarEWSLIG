@@ -500,4 +500,9 @@
     <Parameter Name="OutPut" Parameter="outPut" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.Prc_CheckSeedNo" Method="Prc_CheckSeedNo">
+    <Parameter Name="SeedNo" Parameter="seedNo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Output" Parameter="output" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

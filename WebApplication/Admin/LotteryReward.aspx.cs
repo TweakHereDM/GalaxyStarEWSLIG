@@ -237,16 +237,26 @@ namespace WebApplication
 
             if (!string.IsNullOrEmpty(txtSeedNo.Text))
             {
-                lnkReset.Visible = false;
-                ltrTrialLotteryCount.Text = ltrTrialLotteryCount.Text == "" ? "0" : ltrTrialLotteryCount.Text;
+                var objUser = objBLL.CheckSeedNo(Convert.ToInt32(txtSeedNo.Text));
+                if (objUser.Contains("Added"))
+                {
+                    lnkReset.Visible = false;
+                    ltrTrialLotteryCount.Text = ltrTrialLotteryCount.Text == "" ? "0" : ltrTrialLotteryCount.Text;
 
-                objBLL.UpdateSetLotteryTimer(1, -1);
-                objBLL.ResetTrialLottery(0);
-                TrailNoWithSeed();
-                SetTimer();
-                rpt_item.DataSource = null;
-                rpt_item.DataBind();
-                ltrRecordCount.Text = "0";
+                    objBLL.UpdateSetLotteryTimer(1, -1);
+                    objBLL.ResetTrialLottery(0);
+                    TrailNoWithSeed();
+                    SetTimer();
+                    rpt_item.DataSource = null;
+                    rpt_item.DataBind();
+                    ltrRecordCount.Text = "0";
+                }
+                else
+                {
+                    Response.Write("<script>alert('" + objUser + "')</script>");
+                    return;
+                }
+                
             }
             else
             {
@@ -258,13 +268,24 @@ namespace WebApplication
         {
             if (!string.IsNullOrEmpty(txtSeedNo.Text))
             {
-                txtTrialLottery.Text = txtTrialLottery.Text == "" ? "0" : txtTrialLottery.Text;
-                objBLL.UpdateSetLotteryTimer(1, Convert.ToInt32(txtTrialLottery.Text));
-                TrailNoWithSeed();
-                ltrTrialLotteryCount.Text = txtTrialLottery.Text;
-                LinkButton1.Visible = false;
-                txtTrialLottery.Visible = false;
-                SetTimer();
+                var objUser = objBLL.CheckSeedNo(Convert.ToInt32(txtSeedNo.Text));
+                if (objUser.Contains("Added"))
+                {
+                    txtTrialLottery.Text = txtTrialLottery.Text == "" ? "0" : txtTrialLottery.Text;
+                    objBLL.UpdateSetLotteryTimer(1, Convert.ToInt32(txtTrialLottery.Text));
+                    TrailNoWithSeed();
+                    ltrTrialLotteryCount.Text = txtTrialLottery.Text;
+                    LinkButton1.Visible = false;
+                    txtTrialLottery.Visible = false;
+                    SetTimer();
+                }
+                else
+                {
+                    Response.Write("<script>alert('" + objUser + "')</script>");
+                    return;
+                }
+
+                    
             }
             else
             {

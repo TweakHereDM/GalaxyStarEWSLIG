@@ -1,73 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\",
+  "WorkspaceRootPath": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_gituhub\\galaxystarewslig\\webapplication\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_gituhub\\galaxystarewslig\\webapplication\\allotmentlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\allotmentlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_gituhub\\galaxystarewslig\\webapplication\\allotmentlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\allotmentlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_gituhub\\galaxystarewslig\\webapplication\\admin\\formlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\formlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89104D8A-8D70-434C-8679-3422AE34E6F9}|BusinessLogicLayer\\BusinessLogicLayer.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\businesslogiclayer\\commonbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89104D8A-8D70-434C-8679-3422AE34E6F9}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\commonbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\lotteryreward.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|d:\\tweak_github\\galaxystarewslig\\webapplication\\admin\\lotteryreward.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\lotteryreward.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\lotteryreward.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\admin\\lotteryreward.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\lotteryreward.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\finalprint.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89104D8A-8D70-434C-8679-3422AE34E6F9}|BusinessLogicLayer\\BusinessLogicLayer.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\businesslogiclayer\\commonbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89104D8A-8D70-434C-8679-3422AE34E6F9}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\commonbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89104D8A-8D70-434C-8679-3422AE34E6F9}|BusinessLogicLayer\\BusinessLogicLayer.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\businesslogiclayer\\website.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{89104D8A-8D70-434C-8679-3422AE34E6F9}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\website.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\allotmentlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\allotmentlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\allotmentlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\allotmentlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\admin\\formlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\formlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\admin\\finalprint.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\finalprint.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\finalprint.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\admin\\finalprint.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\finalprint.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\admin\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\apply.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\apply.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\apply.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\apply.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\apply.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\apply.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\adduser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\admin\\adduser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\adduser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\trialprint.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\admin\\trialprint.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\trialprint.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\formlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\formlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\formlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\website.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\admin\\website.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\website.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\webapplication\\admin\\trialprint.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\webapplication\\admin\\trialprint.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6CDF200-EA99-44B3-9BCF-3BD322183CEE}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\admin\\trialprint.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -78,68 +82,51 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "CommonBLL.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\CommonBLL.cs",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\CommonBLL.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\CommonBLL.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\CommonBLL.cs",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\CommonBLL.cs",
               "RelativeToolTip": "BusinessLogicLayer\\CommonBLL.cs",
-              "ViewState": "AgIAAMcBAAAAAAAAAAAWwN0BAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABcCAAAAAAAAAAAmwBwCAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T12:34:15.765Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AllotmentList.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\AllotmentList.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\AllotmentList.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\AllotmentList.aspx",
-              "RelativeToolTip": "WebApplication\\AllotmentList.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-07T11:00:36.674Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FormList.aspx.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx.cs",
-              "RelativeDocumentMoniker": "WebApplication\\Admin\\FormList.aspx.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx.cs",
-              "RelativeToolTip": "WebApplication\\Admin\\FormList.aspx.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAwwB8AAADYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T10:50:54.02Z",
-              "EditorCaption": ""
+              "Title": "Website.dbml",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\Website.dbml",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Website.dbml",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\BusinessLogicLayer\\Website.dbml",
+              "RelativeToolTip": "BusinessLogicLayer\\Website.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2026-07-08T09:14:17.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "AllotmentList.aspx.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\AllotmentList.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\AllotmentList.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\AllotmentList.aspx.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\AllotmentList.aspx.cs",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\AllotmentList.aspx.cs",
               "RelativeToolTip": "WebApplication\\AllotmentList.aspx.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T10:49:32.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-07T10:49:32.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FinalPrint.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FinalPrint.aspx",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FinalPrint.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\FinalPrint.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FinalPrint.aspx",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FinalPrint.aspx",
               "RelativeToolTip": "WebApplication\\Admin\\FinalPrint.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -147,24 +134,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "LotteryReward.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\LotteryReward.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx",
               "RelativeToolTip": "WebApplication\\Admin\\LotteryReward.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-04-25T12:40:02.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T12:40:02.232Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "TrialPrint.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TrialPrint.aspx",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TrialPrint.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\TrialPrint.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TrialPrint.aspx",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TrialPrint.aspx",
               "RelativeToolTip": "WebApplication\\Admin\\TrialPrint.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -172,11 +158,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "TrialPrint.aspx.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TrialPrint.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TrialPrint.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\TrialPrint.aspx.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TrialPrint.aspx.cs",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\TrialPrint.aspx.cs",
               "RelativeToolTip": "WebApplication\\Admin\\TrialPrint.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -185,25 +171,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\Index.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx",
-              "RelativeToolTip": "WebApplication\\Index.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-04-02T13:01:02.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "LotteryReward.aspx.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\LotteryReward.aspx.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx.cs",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\LotteryReward.aspx.cs",
               "RelativeToolTip": "WebApplication\\Admin\\LotteryReward.aspx.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAIAwwF4AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAAAPsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T12:18:26.76Z",
               "EditorCaption": ""
@@ -211,10 +184,46 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "FormList.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\Admin\\FormList.aspx.cs",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FormList.aspx.cs",
+              "RelativeToolTip": "WebApplication\\Admin\\FormList.aspx.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwB8AAADYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T10:50:54.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AllotmentList.aspx",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\AllotmentList.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\AllotmentList.aspx",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\AllotmentList.aspx",
+              "RelativeToolTip": "WebApplication\\AllotmentList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-07T11:00:36.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.aspx",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\Index.aspx",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Index.aspx",
+              "RelativeToolTip": "WebApplication\\Index.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-04-02T13:01:02.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "FinalPrint.aspx.cs",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FinalPrint.aspx.cs",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FinalPrint.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\FinalPrint.aspx.cs",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FinalPrint.aspx.cs",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\FinalPrint.aspx.cs",
               "RelativeToolTip": "WebApplication\\Admin\\FinalPrint.aspx.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwBIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -222,11 +231,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AddUser.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddUser.aspx",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddUser.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\AddUser.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddUser.aspx",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\AddUser.aspx",
               "RelativeToolTip": "WebApplication\\Admin\\AddUser.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -234,11 +243,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Apply.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Apply.aspx",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Apply.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Apply.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Apply.aspx",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Apply.aspx",
               "RelativeToolTip": "WebApplication\\Apply.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -246,11 +255,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "apply.html",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\apply.html",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\apply.html",
               "RelativeDocumentMoniker": "WebApplication\\apply.html",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\apply.html",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\apply.html",
               "RelativeToolTip": "WebApplication\\apply.html",
               "ViewState": "AgIAAFEBAAAAAAAAAAAAAFEBAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
@@ -258,11 +267,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Dashboard.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\Dashboard.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Dashboard.aspx",
               "RelativeToolTip": "WebApplication\\Admin\\Dashboard.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -270,11 +279,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "FormList.aspx",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\FormList.aspx",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\FormList.aspx",
               "RelativeDocumentMoniker": "WebApplication\\FormList.aspx",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\FormList.aspx",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\FormList.aspx",
               "RelativeToolTip": "WebApplication\\FormList.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -282,16 +291,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Website.Master",
-              "DocumentMoniker": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Website.Master",
+              "DocumentMoniker": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Website.Master",
               "RelativeDocumentMoniker": "WebApplication\\Admin\\Website.Master",
-              "ToolTip": "D:\\Tweak_GituHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Website.Master",
+              "ToolTip": "D:\\Tweak_GitHub\\GalaxyStarEWSLIG\\WebApplication\\Admin\\Website.Master",
               "RelativeToolTip": "WebApplication\\Admin\\Website.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-04-26T07:28:03.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T07:28:03.82Z"
             }
           ]
         }

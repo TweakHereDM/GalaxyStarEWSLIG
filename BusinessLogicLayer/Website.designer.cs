@@ -381,6 +381,14 @@ namespace BusinessLogicLayer
 			outPut = ((string)(result.GetParameterValue(2)));
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Prc_CheckSeedNo")]
+		public int Prc_CheckSeedNo([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SeedNo", DbType="Int")] System.Nullable<int> seedNo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Output", DbType="VarChar(200)")] ref string output)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), seedNo, output);
+			output = ((string)(result.GetParameterValue(1)));
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ABUser_login")]

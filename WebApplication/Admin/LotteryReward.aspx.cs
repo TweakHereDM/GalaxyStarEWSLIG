@@ -154,7 +154,7 @@ namespace WebApplication
                 var Final = objBLL.FormlistTake1by1(0, null, null, null, 0, 1, 100, out CountRecord);
                 if (CountRecord < 79)
                 {
-                    var Category = objBLL.FormCategoryDisctinct(null, out _);
+                    var Category = objBLL.FormCategoryDisctinct(drpCategory.SelectedValue, out _);
                     foreach (var Cat in Category)
                     {
                         var ApplyFor = new List<string> { "EWS", "LIG" };
